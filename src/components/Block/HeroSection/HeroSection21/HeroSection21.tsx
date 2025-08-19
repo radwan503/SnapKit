@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Plane, Search, CalendarDays, ChevronDown, User, Menu, X, Globe, DollarSign, Clock, Users, ArrowRight, BedDouble } from "lucide-react";
 
-// Main component for the updated Hero Section
+
 const HeroSection21 = () => {
   const [tripType, setTripType] = useState("oneway");
   const [menuOpen, setMenuOpen] = useState(false);
@@ -11,7 +11,7 @@ const HeroSection21 = () => {
   const [destination, setDestination] = useState("");
   const [departureDate, setDepartureDate] = useState(new Date().toISOString().slice(0, 10));
 
-  // A new, more modern SVG for the logo
+
   const FickleFlightLogo = () => (
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-white w-7 h-7">
       <path d="M12 19L5 12L12 5L19 12L12 19Z" />
