@@ -1,9 +1,10 @@
 import { motion } from "framer-motion";
+import { Sparkles } from "lucide-react";
 import Button from "../../../../utils/Button";
 
 export default function HeroSection12() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-[#0f172a] to-[#1e293b] overflow-hidden px-4 sm:px-6 md:px-16">
+    <section className="relative py-8 lg:py-24 flex items-center justify-center bg-gradient-to-br from-[#0f172a] via-[#1e1b4b] to-[#1e293b] overflow-hidden">
       {/* Background animated shapes */}
       <motion.div
         initial={{ opacity: 0, scale: 0.8 }}
@@ -19,16 +20,28 @@ export default function HeroSection12() {
       />
 
       {/* Hero content */}
-      <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 items-center">
+      <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-16 items-center w-full max-w-7xl px-6">
+        
         {/* Left text section */}
-        <div className="space-y-4 sm:space-y-6">
+        <div className="space-y-6">
+          {/* Logo */}
+          <div className="flex items-center gap-2 mb-6">
+            <Sparkles className="h-8 w-8 text-purple-400" />
+            <span className="text-2xl font-extrabold tracking-tight text-white">
+              Vision<span className="text-purple-400">X</span>
+            </span>
+          </div>
+
           <motion.h1
             initial={{ y: 50, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.8 }}
-            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-snug sm:leading-tight"
+            className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-snug sm:leading-tight"
           >
-            Design Your <span className="text-purple-400">Future</span> <br />
+            Design Your{" "}
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-400">
+              Future
+            </span>{" "}
             With Creative Ideas
           </motion.h1>
 
@@ -36,13 +49,14 @@ export default function HeroSection12() {
             initial={{ y: 50, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 1 }}
-            className="text-gray-300 text-base sm:text-lg md:text-xl"
+            className="text-gray-300 text-lg md:text-xl max-w-xl"
           >
-            Build stunning digital experiences with modern UI, smooth animations, and smart layouts that adapt to every device.
+            Build stunning digital experiences with modern UI, smooth animations, 
+            and smart layouts that adapt to every device.
           </motion.p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 mt-4">
+          <div className="flex flex-col sm:flex-row gap-4 mt-6">
             <Button className="bg-purple-600 hover:bg-purple-700 text-lg px-6 py-3 rounded-xl shadow-lg w-full sm:w-auto text-center">
               Get Started
             </Button>
@@ -55,22 +69,27 @@ export default function HeroSection12() {
           </div>
         </div>
 
-        {/* Right image section with responsive scaling */}
+        {/* Right image section */}
         <motion.div
-          initial={{ opacity: 0, x: 50 }}
+          initial={{ opacity: 0, x: 60 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
-          className="flex justify-center mt-8 md:mt-0 w-full"
+          className="relative flex justify-center mt-8 md:mt-0"
         >
+          {/* Floating image */}
           <motion.img
-            src="https://images.unsplash.com/photo-1530893609608-32a9af3aa95c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzR8fHRlY2h8ZW58MHx8MHx8fDI%3D"
+            src="https://images.unsplash.com/photo-1530893609608-32a9af3aa95c?w=700&auto=format&fit=crop&q=80"
             alt="hero"
-            className="rounded-2xl shadow-2xl border border-gray-700 w-full h-auto sm:h-[300px] md:h-[400px] lg:h-[500px] object-cover"
+            className="rounded-2xl shadow-2xl border border-gray-700 max-w-md object-cover"
             animate={{ y: [0, -15, 0] }}
             transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }}
           />
-        </motion.div>
 
+          {/* Decorative glow behind image */}
+          <div className="absolute -z-10 inset-0 flex justify-center items-center">
+            <div className="w-72 h-72 bg-purple-500/20 rounded-full blur-3xl"></div>
+          </div>
+        </motion.div>
       </div>
     </section>
   );

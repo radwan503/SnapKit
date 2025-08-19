@@ -17,6 +17,9 @@ import HeroSectionDemo15 from "../../../components/Block/HeroSection/HeroSection
 import HeroSectionDemo16 from "../../../components/Block/HeroSection/HeroSection16/Demo";
 import HeroSectionDemo17 from "../../../components/Block/HeroSection/HeroSection17/Demo";
 import HeroSectionDemo18 from "../../../components/Block/HeroSection/HeroSection18/Demo";
+import HeroSectionDemo19 from "../../../components/Block/HeroSection/HeroSection19/Demo";
+import HeroSectionDemo20 from "../../../components/Block/HeroSection/HeroSection20/Demo";
+import HeroSectionDemo21 from "../../../components/Block/HeroSection/HeroSection21/Demo";
 
 const HeroSectionPage = () => {
 
@@ -165,6 +168,27 @@ const HeroSectionPage = () => {
               SECTIONS
             </h2>
             <HeroSectionDemo18/>
+          </div>
+
+         <div className="mb-16">
+            <h2 className="text-base font-semibold text-textSlate mb-6 uppercase tracking-wide">
+              SECTIONS
+            </h2>
+            <HeroSectionDemo19/>
+          </div>
+
+          <div className="mb-16">
+            <h2 className="text-base font-semibold text-textSlate mb-6 uppercase tracking-wide">
+              SECTIONS
+            </h2>
+            <HeroSectionDemo20/>
+          </div>
+
+           <div className="mb-16">
+            <h2 className="text-base font-semibold text-textSlate mb-6 uppercase tracking-wide">
+              SECTIONS
+            </h2>
+            <HeroSectionDemo21/>
           </div>
 
 

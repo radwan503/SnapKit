@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState, type CSSProperties } from "react";
 
-export default function HeroSection18() {
+const HeroSection18=()=> {
   // helper to set CSS custom property --w without TS error
   const w = (val: string): CSSProperties => ({ ['--w' as any]: val });
 
@@ -301,3 +301,4 @@ export default function HeroSection18() {
     </div>
   );
 }
+export default HeroSection18

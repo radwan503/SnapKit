@@ -5,7 +5,7 @@ const HeroSection15 = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <div className="min-h-screen w-full bg-[#DFF1FF] text-neutral-900">
+    <div className="w-full bg-[#DFF1FF] text-neutral-900">
       {/* Thin top accent bar */}
       <div className="h-1 w-full bg-blue-600/80" />
 
