@@ -1,4 +1,3 @@
-import React from 'react';
 import { ArrowRight, PlayCircle } from 'lucide-react';
 
 const HeroSection2 = () => {

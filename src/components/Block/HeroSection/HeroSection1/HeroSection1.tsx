@@ -1,6 +1,5 @@
-import React from "react";
 import { UserCog, ShoppingCart, ChartLine, Rocket, Blocks } from "lucide-react";
-import style from "react-syntax-highlighter/dist/esm/styles/hljs/a11y-dark";
+
 
 const FloatingIcon = ({ icon: Icon, className, delay }: any) => (
   <div

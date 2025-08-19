@@ -1,12 +1,8 @@
 import React from "react";
 
-// Tailwind required. This component uses CSS variables inline so you don't need a global :root.
-// Drop it into any React + Tailwind app and render <AngledPanelBackground />.
 
 export default function AngledPanelBackground() {
   const vars: React.CSSProperties = {
-    // Tweak these to match your screenshot exactly
-    // (You can also lift these to props if you want to control them from the parent.)
     // @ts-ignore - CSS custom properties are fine
     "--bg": "#010d20",
     "--hatch-gap": "10px",
@@ -19,13 +15,6 @@ export default function AngledPanelBackground() {
   const railHatchStyle: React.CSSProperties = {
     backgroundImage: `repeating-linear-gradient(135deg, rgba(255,255,255,var(--hatch-opacity)) 0 1px, transparent 1px var(--hatch-gap))`,
     backgroundSize: `var(--hatch-gap) var(--hatch-gap)`,
-  } as React.CSSProperties;
-
-  const noiseOverlay: React.CSSProperties = {
-    // subtle noise to avoid flat banding
-    backgroundImage:
-      "url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2240%22 height=%2240%22 viewBox=%220 0 40 40%22%3E%3Cfilter id=%22n%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.9%22 numOctaves=%222%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Cg opacity=%270.25%27%3E%3Crect width=%2240%22 height=%2240%22 filter=%22url(%23n)%22/%3E%3C/g%3E%3C/svg%3E')",
-    backgroundSize: "180px 180px",
   } as React.CSSProperties;
 
   return (

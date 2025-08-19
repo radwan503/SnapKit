@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Sparkles, Menu, X } from "lucide-react";
 
 const HeroSection17 = () => {

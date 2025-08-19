@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState, type CSSProperties } from "react";
+import { useEffect, useMemo, useState, type CSSProperties } from "react";
 
 export default function HeroSection18() {
   // helper to set CSS custom property --w without TS error

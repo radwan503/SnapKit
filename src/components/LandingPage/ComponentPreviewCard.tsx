@@ -1,5 +1,3 @@
-import React from "react";
-
 const patterns = [
     // Random diagonal line pattern (like your screenshot)
   "bg-[repeating-linear-gradient(45deg,rgba(255,255,255,.05)_0px,rgba(255,255,255,.05)_1px,transparent_1px,transparent_20px)]",

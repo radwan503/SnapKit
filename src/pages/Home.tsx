@@ -1,7 +1,6 @@
 import React from "react"
 import HeroSection from "../components/LandingPage/HeroSection"
 import OfferingsSection from "../components/LandingPage/OfferingsSection"
-import IllustrativeImageSection from "../components/LandingPage/IllustrativeImageSection"
 import TestimonialsSection from "../components/LandingPage/TestimonialsSection"
 import UIComponentsMarketingSection from "../components/LandingPage/UIComponentsMarketingSection"
 import TemplatesGridSection from "../components/LandingPage/TemplatesGridSection"
@@ -16,7 +15,6 @@ const Home = () => {
         <HeroSection />
         <OfferingsSection />
         {/* <IllustrativeImageSection /> */}
-        
         <UIComponentsMarketingSection/>
         <TemplatesGridSection/>
         <TestimonialsSection />
