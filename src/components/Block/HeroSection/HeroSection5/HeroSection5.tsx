@@ -2,11 +2,8 @@ import { Sparkles, BarChart2 } from 'lucide-react';
 
 const HeroSection5 = () => (
   <section className="bg-gray-900 border border-gray-800 min-h-screen grid grid-cols-1 md:grid-cols-2 overflow-hidden">
-    {/* Animated Visual Side */}
     <div className="relative flex items-center justify-center p-8 md:p-16">
-      {/* Background with a CSS animation for a creative effect */}
       <div className="w-full h-full rounded-3xl p-4 md:p-8 relative overflow-hidden flex items-center justify-center shadow-lg transform rotate-3 scale-105 bg-gradient-to-br from-indigo-500 to-purple-500 animate-pulse-slow">
-        {/* Abstract shapes or icons */}
         <Sparkles className="absolute top-1/4 left-1/4 w-12 h-12 text-white/50 animate-spin-slow" />
         <BarChart2 className="absolute bottom-1/4 right-1/4 w-12 h-12 text-white/50 animate-bounce" />
         <h2 className="relative z-10 text-white text-3xl font-bold text-center">Data that Pops.</h2>

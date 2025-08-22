@@ -6,9 +6,7 @@ const HeroSection11 = () => {
 
   return (
     <div className="relative bg-[#0a1128] text-white min-h-screen overflow-hidden">
-      {/* Navbar */}
       <nav className="flex items-center justify-between px-8 py-6 max-w-7xl mx-auto relative z-20">
-        {/* Logo */}
         <div className="flex items-center space-x-2">
           <div className="w-6 h-6 bg-blue-500 rounded-sm"></div>
           <span className="text-lg font-bold">Brand</span>

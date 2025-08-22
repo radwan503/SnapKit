@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Mail, Menu, X, Check } from "lucide-react";
 
-// A custom, modern SVG for the logo.
 const AscendLogo = () => (
   <svg
     width="30"
@@ -37,17 +36,12 @@ const HeroSection16 = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    // Updated container with a dynamic gradient background and a subtle pattern
     <div className="relative font-sans text-neutral-900 min-h-screen flex items-center justify-center py-16 px-4 overflow-hidden dark:text-neutral-100">
-      {/* Background Gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 opacity-80 dark:opacity-60 z-0"></div>
       
-      {/* Container for the content, centered and with rounded corners */}
       <div className="relative max-w-7xl mx-auto w-full p-4 sm:p-8 bg-white/30 dark:bg-neutral-900/30 backdrop-blur-md rounded-3xl shadow-xl z-10">
         
-        {/* --- Header Section --- */}
         <header className="flex items-center justify-between mb-16 relative">
-          {/* Logo with updated SVG and text */}
           <div className="flex items-center space-x-2 text-2xl font-extrabold tracking-tight">
             <AscendLogo />
             <span className="text-white dark:text-neutral-100">Ascend</span>
@@ -109,7 +103,7 @@ const HeroSection16 = () => {
         {/* --- Main Content Section --- */}
         <div className="flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-24">
           
-          {/* Left Column (Text Content) */}
+          {/* Left Column */}
           <div className="w-full lg:w-3/5 text-center lg:text-left">
             <h1 className="text-4xl sm:text-6xl md:text-6xl  font-extrabold leading-tight mb-6 text-white dark:text-white drop-shadow-lg">
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-300 to-white dark:from-blue-500 dark:to-white">
@@ -118,12 +112,10 @@ const HeroSection16 = () => {
                Your Business with a Modern POS
             </h1>
 
-            {/* Subtitle/Description */}
             <p className="text-xl text-neutral-100 dark:text-neutral-200 mb-8">
               A powerful, all-in-one solution to manage your sales, inventory, and customer relationships with ease.
             </p>
 
-            {/* Checklist */}
             <ul className="space-y-4 mb-8 text-neutral-200 text-lg">
               <li className="flex items-start justify-center lg:justify-start space-x-2">
                 <Check className="w-6 h-6 text-green-300 mt-1 flex-shrink-0" />
@@ -155,7 +147,7 @@ const HeroSection16 = () => {
             </div>
           </div>
 
-          {/* Right Column (Image and Floating Cards) */}
+          {/* Right Column */}
           <div className="relative w-full lg:w-2/5 mt-12 lg:mt-0 p-4 sm:p-8 flex justify-center items-center">
             <div className="relative w-full h-[300px] sm:h-[450px] md:h-[550px] rounded-3xl overflow-hidden shadow-2xl transition-all duration-500 transform hover:scale-105">
               <img

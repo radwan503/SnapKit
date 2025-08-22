@@ -2,11 +2,9 @@ import { useState, useEffect } from 'react';
 import { ArrowRight } from 'lucide-react';
 
 const HeroSection3 = () => {
-  // State to store mouse position for the parallax effect
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
-    // Function to handle mouse movement and update the state
     const handleMouseMove = (event:any) => {
       const { clientX, clientY } = event;
       // Get the center of the viewport
@@ -28,10 +26,8 @@ const HeroSection3 = () => {
   }, []);
 
   return (
-    // Main container with a dark background, a minimum height, and overflow hidden to contain the background elements
     <div className="min-h-screen flex items-center justify-center p-4 sm:p-8 bg-slate-950 text-white font-sans antialiased relative overflow-hidden">
       
-      {/* Background radial gradient and animated blob effect */}
       <div className="absolute inset-0 bg-gradient-to-br from-slate-950 via-indigo-950 to-slate-950 opacity-40"></div>
       
       {/* This is the animated background shape */}
@@ -47,7 +43,6 @@ const HeroSection3 = () => {
         }}
       >
         
-        {/* 'New' banner, a pill-shaped button with a gradient effect */}
         <a 
           href="#" 
           className="inline-flex items-center justify-between p-1 pr-4 mb-7 text-sm font-medium transition-all duration-300 transform bg-indigo-500/10 hover:bg-indigo-500/20 text-indigo-300 rounded-full shadow-md"
@@ -57,20 +52,16 @@ const HeroSection3 = () => {
           <ArrowRight className="ml-2 w-4 h-4" />
         </a>
 
-        {/* Main headline with a gradient text effect */}
         <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight mb-6">
           Reimagine <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">Innovation</span> with SnapKit
         </h1>
 
-        {/* Descriptive paragraph with responsive width */}
         <p className="text-base sm:text-lg md:text-xl text-slate-400 mb-8 max-w-2xl mx-auto">
           From groundbreaking concepts to polished products, our platform empowers you to build with unparalleled creativity and efficiency.
         </p>
 
-        {/* Action buttons with modern styling and hover effects */}
         <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center">
           
-          {/* Primary button with a glowing hover effect */}
           <a
             href="#"
             className="inline-flex items-center justify-center px-8 py-3 font-semibold rounded-full bg-indigo-600 text-white transition-all duration-300 hover:bg-indigo-700 hover:scale-105 shadow-xl hover:shadow-indigo-500/50"
@@ -79,7 +70,6 @@ const HeroSection3 = () => {
             <ArrowRight className="w-5 h-5 ml-2" />
           </a>
 
-          {/* Secondary button with a transparent, outlined style */}
           <a
             href="#"
             className="inline-flex items-center justify-center px-8 py-3 font-semibold rounded-full bg-transparent text-slate-300 border border-slate-700 transition-all duration-300 hover:border-slate-500 hover:text-white hover:scale-105"

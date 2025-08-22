@@ -6,7 +6,6 @@ const HeroSection9 = () => {
       aria-labelledby="hero-section"
       className="relative isolate overflow-hidden bg-gradient-to-br from-purple-600 via-pink-500 to-orange-400 text-white"
     >
-      {/* Decorative blur shapes */}
       <div
         aria-hidden="true"
         className="absolute -top-24 right-0 w-72 h-72 rounded-full bg-white/10 blur-3xl"
@@ -17,7 +16,6 @@ const HeroSection9 = () => {
       />
 
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 sm:py-32 relative z-10">
-        {/* Logo */}
         <div className="flex items-center justify-center gap-2 mb-8">
           <Drone  className="h-10 w-10 text-yellow-300 drop-shadow-lg" />
           <span className="text-2xl font-extrabold tracking-tight drop-shadow-sm">
@@ -45,7 +43,6 @@ const HeroSection9 = () => {
             faster than ever.
           </p>
 
-          {/* CTA Buttons */}
           <div className="mt-10 flex items-center justify-center gap-4">
             <a
               href="#get-started"

@@ -1,10 +1,8 @@
 import { useEffect, useMemo, useState, type CSSProperties } from "react";
 
 const HeroSection18=()=> {
-  // helper to set CSS custom property --w without TS error
   const w = (val: string): CSSProperties => ({ ['--w' as any]: val });
 
-  // ===== helpers =====
   const formatMoney = (n: number) =>
     new Intl.NumberFormat("en-US", {
       style: "currency",
@@ -12,7 +10,6 @@ const HeroSection18=()=> {
       maximumFractionDigits: 3,
     }).format(n);
 
-  // stat seeds
   const [profit, setProfit] = useState(350.24);
   const [revenue, setRevenue] = useState(400.69);
   const [sold, setSold] = useState(200.0);
@@ -20,7 +17,6 @@ const HeroSection18=()=> {
   // mobile menu
   const [menuOpen, setMenuOpen] = useState(false);
 
-  // gentle random walk for realism
   useEffect(() => {
     const id = setInterval(() => {
       setProfit((p) => +(p + (Math.random() - 0.45) * 0.25).toFixed(3));
@@ -30,10 +26,8 @@ const HeroSection18=()=> {
     return () => clearInterval(id);
   }, []);
 
-  // moving bar heights for tiny charts (loop via CSS delays)
   const tinyBars = useMemo(() => [4, 7, 10, 5, 8, 6, 9, 7], []);
 
-  // faux line graph bars (duplicated for ticker)
   const lineBars = useMemo(
     () => [
       20, 35, 18, 42, 30, 15, 22, 26, 19, 24, 28, 36, 25, 18, 22, 40, 38, 30, 24, 33, 27, 41, 20, 34, 22, 29, 37, 32, 26, 31, 28, 35, 21, 25, 30, 18, 22, 29, 33, 27,
@@ -43,7 +37,6 @@ const HeroSection18=()=> {
 
   return (
     <div className="min-h-screen w-full bg-[#0A57D0] text-white">
-      {/* Inline keyframes for subtle motion */}
       <style>{`
         @keyframes barPulse { 0%{transform:scaleY(.8)} 50%{transform:scaleY(1.15)} 100%{transform:scaleY(.8)} }
         @keyframes ticker { from{transform:translateX(0)} to{transform:translateX(-50%)} }
@@ -75,7 +68,6 @@ const HeroSection18=()=> {
           {/* Logo */}
           <a href="#" className="flex items-center gap-2">
             <span className="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-white/10">
-              {/* simple cross/star icon */}
               <svg viewBox="0 0 24 24" aria-hidden="true" className="h-5 w-5 text-white">
                 <path fill="currentColor" d="M11 3h2v6h6v2h-6v6h-2v-6H5V9h6z" />
               </svg>
@@ -174,7 +166,6 @@ const HeroSection18=()=> {
                     <p className="text-xs uppercase tracking-wide text-slate-500">{s.title}</p>
                     <p className="mt-2 text-2xl font-bold tabular-nums">{formatMoney(s.value)}</p>
                   </div>
-                  {/* tiny animated bar chart */}
                   <div className="flex items-end gap-1 h-10">
                     {tinyBars.map((h, i) => (
                       <div
@@ -223,7 +214,6 @@ const HeroSection18=()=> {
               </div>
             </div>
 
-            {/* Spend Overview (ticker faux graph) */}
             <div className="lg:col-span-3 rounded-xl border border-slate-200 p-4">
               <div className="flex items-center justify-between">
                 <p className="text-xs uppercase tracking-wide text-slate-500">Spend Overview</p>
@@ -236,11 +226,9 @@ const HeroSection18=()=> {
               {/* Graph */}
               <div className="mt-4 h-48 w-full">
                 <div className="relative h-full w-full rounded-lg bg-gradient-to-b from-lime-100/50 to-white border border-slate-200 overflow-hidden">
-                  {/* Y gridlines */}
                   {[20, 40, 60, 80].map((t, i) => (
                     <div key={i} className="absolute left-0 right-0 border-t border-dashed border-slate-200" style={{ top: `${t}%` }} />
                   ))}
-                  {/* Ticker bars: duplicate sequence for seamless loop */}
                   <div className="absolute inset-x-2 bottom-6 top-2">
                     <div className="flex h-full w-[200%] items-end gap-1 animate-[ticker_16s_linear_infinite]">
                       {[...lineBars, ...lineBars].map((h, i) => (

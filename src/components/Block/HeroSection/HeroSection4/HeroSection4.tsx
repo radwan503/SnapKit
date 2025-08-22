@@ -25,7 +25,6 @@ const HeroSection4 = () => (
     {/* Video Side */}
     <div className="relative overflow-hidden bg-gray-800 flex items-center justify-center">
       <div className="w-full h-full">
-        {/* ✅ Use iframe for YouTube */}
         <iframe
           className="w-full h-full aspect-video"
           src="https://www.youtube.com/embed/Hgg7M3kSqyE?autoplay=0&rel=0"

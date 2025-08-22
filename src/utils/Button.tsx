@@ -1,6 +1,3 @@
-
-
-
 const Button = ({ children, variant = 'primary', size = 'md', className = '', icon: Icon, ...props }:any) => {
   let baseStyles = 'inline-flex items-center justify-center font-medium rounded-full transition-all duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white';
   let variantStyles = '';

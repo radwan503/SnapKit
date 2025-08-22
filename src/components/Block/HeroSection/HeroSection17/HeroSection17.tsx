@@ -7,7 +7,6 @@ const HeroSection17 = () => {
   return (
     <div className="bg-white dark:bg-gray-900 text-gray-900 dark:text-white font-sans">
       <div className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-        {/* --- Header Section --- */}
         <header className="flex flex-wrap items-center justify-between border-b border-gray-200 dark:border-gray-700 pb-6 mb-10">
           {/* Logo */}
           <div className="flex items-center space-x-2">
@@ -89,7 +88,7 @@ const HeroSection17 = () => {
             </button>
           </div>
 
-          {/* Right Column: Illustration Placeholder */}
+          {/* Right Column */}
           <div className="w-full lg:w-1/2 flex items-center justify-center p-6">
             <div className="w-full h-64 sm:h-80 lg:h-96 bg-gradient-to-tr from-gray-200 to-gray-300 dark:from-gray-700 dark:to-gray-800 rounded-2xl flex items-center justify-center text-gray-500 dark:text-gray-400">
               <svg className="w-full h-auto max-w-lg" width="601" height="515" viewBox="0 0 601 515" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -148,7 +147,6 @@ const HeroSection17 = () => {
           </div>
         </div>
 
-        {/* --- Client Logos Section --- */}
         <div className="flex flex-wrap items-center justify-center gap-6 sm:gap-10 md:gap-16 border-t border-gray-200 dark:border-gray-700 pt-8 mt-12">
           {["amazon", "dribbble", "HubSpot", "Notion", "NETFLIX", "zoom"].map(
             (brand) => (

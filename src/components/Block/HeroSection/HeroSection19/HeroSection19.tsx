@@ -2,9 +2,7 @@ import { useState } from 'react';
 import { ChevronDown, ArrowRight, Dot, Plus, Layout, Zap, Rocket, Menu, X, BarChart2, Users} from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
-// Component for the Floating Card with a more subtle design
 const FloatingCard = ({ className, icon }:any) => {
-  // Define the icon and its color
   const iconProps:any = {
     plus: { bg: "bg-fuchsia-500", icon: <Plus className="h-6 w-6 text-white" /> },
     layout: { bg: "bg-sky-500", icon: <Layout className="h-6 w-6 text-white" /> },
@@ -29,7 +27,6 @@ const FloatingCard = ({ className, icon }:any) => {
   );
 };
 
-// Component for the Card Section within the Dashboard
 const CardSection = ({ title, children }:any) => {
   return (
     <motion.div
@@ -39,7 +36,6 @@ const CardSection = ({ title, children }:any) => {
       transition={{ delay: 0.3, duration: 0.6 }}
       whileHover={{ y: -5 }}
     >
-      {/* Subtle border effect */}
       <div className="absolute inset-0 rounded-3xl opacity-50 [background:radial-gradient(125%_125%_at_50%_10%,_#393A3C_40%,_#2e2e2f_100%)]" />
       <div className="relative z-10">
         <div className="mb-4 flex items-center gap-2 text-xs font-semibold uppercase tracking-wide text-white/50">
@@ -52,12 +48,10 @@ const CardSection = ({ title, children }:any) => {
   );
 };
 
-// Component for the Placeholder Line
 const PlaceholderLine = ({ w = "100%",}) => {
   return <div className="h-2 rounded-full bg-neutral-700/70" style={{ width: w }} />;
 };
 
-// Component for the Placeholder Block
 const PlaceholderBlock = ({ h = "40px" }) => {
   return (
     <div
@@ -83,7 +77,6 @@ const HeroSection19 = () => {
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-5 md:px-8">
           {/* Logo */}
           <div className="flex items-center gap-3">
-            {/* SVG icon for better scalability */}
             <motion.svg
               xmlns="http://www.w3.org/2000/svg"
               width="28"
@@ -226,9 +219,7 @@ const HeroSection19 = () => {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.6 }}
           >
-            {/* First Row of Cards */}
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-              {/* Recent Projects */}
               <CardSection title="Recent Projects">
                 <div className="space-y-4">
                   <div className="flex items-center gap-3">
@@ -282,7 +273,6 @@ const HeroSection19 = () => {
                 </div>
               </CardSection>
 
-              {/* Activity Log */}
               <CardSection title="Activity Log">
                 <div className="space-y-4">
                   <div className="flex items-center gap-3">
@@ -364,7 +354,6 @@ const HeroSection19 = () => {
         </section>
       </main>
 
-      {/* Footer spacing for mobile visual breathing room */}
       <div className="h-10 sm:h-16" />
     </div>
   );

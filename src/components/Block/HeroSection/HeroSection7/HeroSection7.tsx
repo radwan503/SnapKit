@@ -19,9 +19,7 @@ export default function HeroSection7() {
 
   return (
     <div className="min-h-screen bg-[#010d20] text-white font-sans relative">
-      {/* Navbar */}
       <nav className="flex items-center justify-between px-6 md:px-12 py-6 relative z-20">
-        {/* Logo */}
         <div className="flex items-center gap-2">
           <div className="w-7 h-7 bg-gradient-to-r from-green-400 to-cyan-400 rounded-md"></div>
           <h1 className="text-xl font-bold">
@@ -29,7 +27,6 @@ export default function HeroSection7() {
           </h1>
         </div>
 
-        {/* Desktop Links */}
         <div className="hidden md:flex items-center gap-8 font-medium">
           <a href="#" className="text-green-400">
             Home
@@ -39,7 +36,6 @@ export default function HeroSection7() {
           <a href="#">4K</a>
         </div>
 
-        {/* Upload Button */}
         <button className="hidden md:flex items-center gap-2 bg-gradient-to-r from-green-400 to-cyan-400 px-5 py-2 rounded-lg font-semibold text-black hover:opacity-90 transition">
           <Upload size={18} /> Upload
         </button>
@@ -84,7 +80,6 @@ export default function HeroSection7() {
             community. Make your screen come alive!
           </p>
 
-          {/* Buttons */}
           <div className="flex items-center justify-center md:justify-start gap-6 mt-6">
             <button className="px-6 py-3 bg-gradient-to-r from-green-400 to-cyan-400 rounded-lg text-black font-semibold hover:opacity-90 transition">
               Explore Wallpapers
@@ -120,7 +115,7 @@ export default function HeroSection7() {
       {/* Gradient Overlay for Hero */}
       <div className="absolute inset-0 bg-gradient-to-b from-[#010d20]/90 via-[#010d20]/80 to-[#010d20] -z-10"></div>
 
-      {/* Custom Animation */}
+      {/* Style */}
       <style>{`
         @keyframes scroll-slow {
           0% {

@@ -3,15 +3,11 @@ import { Code, ArrowRight } from 'lucide-react';
 
 const HeroSection6 = () => (
   <section className="relative min-h-screen flex items-center justify-center p-8 text-white font-sans bg-gray-950 overflow-hidden">
-    {/* Animated Background Grid and Glow */}
     <div className="absolute inset-0 z-0 opacity-50">
-      {/* Radial gradient glow */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-indigo-500/20 via-slate-950 to-slate-950 animate-glow"></div>
-      {/* Grid pattern overlay */}
       <div className="absolute inset-0 bg-[url('data:image/svg+xml;charset=UTF-8,%3Csvg width=\'16\' height=\'16\' viewBox=\'0 0 16 16\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cpath d=\'M0 0h16v16H0z\' fill=\'none\' /%3E%3Cpath d=\'M8 0v16M0 8h16\' stroke=\'%23334155\' stroke-width=\'0.5\' /%3E%3C/svg%3E')] bg-repeat opacity-20"></div>
     </div>
     
-    {/* Main Content */}
     <div className="relative z-10 w-full max-w-3xl text-center backdrop-blur-sm p-4 md:p-8 transform transition-transform duration-500 animate-fade-in-up">
       <Code className="w-16 h-16 text-cyan-400 mx-auto mb-6 animate-pulse-fast" />
       

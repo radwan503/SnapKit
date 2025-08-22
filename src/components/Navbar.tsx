@@ -14,8 +14,8 @@ const Navbar = ({ toggleSidebar, toggleNav, navOpen }:any) => {
           <button onClick={toggleSidebar} className="2xl:hidden">
             <Menu size={24} />
           </button>
-          
-          <h1 className="text-lg font-bold flex gap-2 items-center"><Grid2x2Plus/>SnapKit</h1>
+          <Link to="/">
+          <h1 className="text-lg font-bold flex gap-2 items-center"><Grid2x2Plus/>SnapKit</h1></Link>
         </div>
 
         <div className="flex items-center gap-4">

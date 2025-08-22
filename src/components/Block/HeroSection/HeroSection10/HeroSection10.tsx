@@ -58,7 +58,6 @@ const HeroSection10 = () => {
             
           </div>
 
-          {/* Inline stats strip (optional) */}
           <dl className="mt-10 grid grid-cols-2 gap-6 sm:max-w-lg sm:grid-cols-3">
             <div>
               <dt className="text-xs text-white/70">Uptime</dt>
