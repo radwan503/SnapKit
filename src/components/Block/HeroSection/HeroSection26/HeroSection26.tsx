@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react'
+import { useState, useMemo } from 'react'
 import {
   LineChart,
   Line,
@@ -17,7 +17,6 @@ import {
   Area,
 } from 'recharts'
 import { motion } from 'framer-motion'
-import { Menu, X } from 'lucide-react'
 
 const COLORS = ['#4F46E5', '#06B6D4', '#F59E0B', '#EF4444', '#10B981']
 
@@ -85,35 +84,35 @@ function KPI({ title, value, delta, hint }:any) {
   )
 }
 
-const Navbar = () => {
-  const [open, setOpen] = useState(false)
-  return (
-    <nav className="w-full bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 p-4 text-white">
-      <div className="max-w-7xl mx-auto flex justify-between items-center">
-        <div className="flex items-center gap-3">
-          <div className="font-bold text-xl">💰 FinanceDash</div>
-        </div>
-        <div className="hidden md:flex gap-6 items-center">
-          <a href="#" className="hover:underline">Dashboard</a>
-          <a href="#" className="hover:underline">Reports</a>
-          <a href="#" className="hover:underline">Analytics</a>
-          <a href="#" className="hover:underline">Settings</a>
-        </div>
-        <button className="md:hidden" onClick={() => setOpen(!open)}>
-          {open ? <X size={24} /> : <Menu size={24} />}
-        </button>
-      </div>
-      {open && (
-        <div className="md:hidden mt-2 flex flex-col gap-2 px-4">
-          <a href="#" className="hover:underline">Dashboard</a>
-          <a href="#" className="hover:underline">Reports</a>
-          <a href="#" className="hover:underline">Analytics</a>
-          <a href="#" className="hover:underline">Settings</a>
-        </div>
-      )}
-    </nav>
-  )
-}
+// const Navbar = () => {
+//   const [open, setOpen] = useState(false)
+//   return (
+//     <nav className="w-full bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 p-4 text-white">
+//       <div className="max-w-7xl mx-auto flex justify-between items-center">
+//         <div className="flex items-center gap-3">
+//           <div className="font-bold text-xl">💰 FinanceDash</div>
+//         </div>
+//         <div className="hidden md:flex gap-6 items-center">
+//           <a href="#" className="hover:underline">Dashboard</a>
+//           <a href="#" className="hover:underline">Reports</a>
+//           <a href="#" className="hover:underline">Analytics</a>
+//           <a href="#" className="hover:underline">Settings</a>
+//         </div>
+//         <button className="md:hidden" onClick={() => setOpen(!open)}>
+//           {open ? <X size={24} /> : <Menu size={24} />}
+//         </button>
+//       </div>
+//       {open && (
+//         <div className="md:hidden mt-2 flex flex-col gap-2 px-4">
+//           <a href="#" className="hover:underline">Dashboard</a>
+//           <a href="#" className="hover:underline">Reports</a>
+//           <a href="#" className="hover:underline">Analytics</a>
+//           <a href="#" className="hover:underline">Settings</a>
+//         </div>
+//       )}
+//     </nav>
+//   )
+// }
 
 const HeroSection26=()=> {
   const [range, setRange] = useState('MTD')
@@ -155,6 +154,8 @@ const HeroSection26=()=> {
         </div>
       </header>
 
+      {/* <Navbar/> */}
+
       <main className="max-w-7xl mx-auto grid gap-6">
         {/* KPI cards */}
         <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
@@ -190,7 +191,7 @@ const HeroSection26=()=> {
               <ResponsiveContainer>
                 <PieChart>
                   <Pie data={expenseBreakdown} dataKey="value" nameKey="name" cx="50%" cy="50%" outerRadius={80} innerRadius={40}>
-                    {expenseBreakdown.map((entry, index) => (
+                    {expenseBreakdown.map((_entry, index) => (
                       <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
                     ))}
                   </Pie>

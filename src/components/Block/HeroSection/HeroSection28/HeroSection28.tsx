@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import  { useState } from "react";
 import { motion } from "framer-motion";
 import {
   LineChart, Line, BarChart, Bar, PieChart, Pie, Cell,
@@ -132,7 +132,7 @@ export default function ProDashboard() {
           <ResponsiveContainer width="100%" height={250}>
             <PieChart>
               <Pie data={auctionStatus} dataKey="value" nameKey="name" cx="50%" cy="50%" outerRadius={70} innerRadius={30} label>
-                {auctionStatus.map((entry, index) => (
+                {auctionStatus.map((_entry, index) => (
                   <Cell key={index} fill={COLORS[index % COLORS.length]} />
                 ))}
               </Pie>
