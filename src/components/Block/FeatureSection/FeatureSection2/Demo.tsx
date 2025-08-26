@@ -1,7 +1,7 @@
 
 import BlockPreview from "../../../Shared/BlockPreview";
 import FeaturesSection2 from "./FeatureSection2";
-import snippetCode from "./FeaturesSection2.tsx?raw";
+import snippetCode from "./FeatureSection2.tsx?raw";
 
 const FeatureSectionDemo2 = () => {
   return (

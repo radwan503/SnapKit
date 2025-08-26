@@ -1,9 +1,5 @@
 import React from "react";
-import HeroSectionDemo3 from "../../../components/Block/HeroSection/HeroSection3/Demo";
-import HeroSectionDemo4 from "../../../components/Block/HeroSection/HeroSection4/Demo";
-import HeroSectionDemo5 from "../../../components/Block/HeroSection/HeroSection5/Demo";
-import HeroSectionDemo6 from "../../../components/Block/HeroSection/HeroSection6/Demo";
-import HeroSectionDemo7 from "../../../components/Block/HeroSection/HeroSection7/Demo";
+
 import HeroSectionDemo8 from "../../../components/Block/HeroSection/HeroSection8/Demo";
 import HeroSectionDemo9 from "../../../components/Block/HeroSection/HeroSection9/Demo";
 import HeroSectionDemo10 from "../../../components/Block/HeroSection/HeroSection10/Demo";
@@ -30,6 +26,11 @@ import HeroSectionDemo30 from "../../../components/Block/HeroSection/HeroSection
 import HeroSectionDemo31 from "../../../components/Block/HeroSection/HeroSection31/Demo";
 import FeatureSectionDemo1 from "../../../components/Block/FeatureSection/FeatureSection1/Demo";
 import FeatureSectionDemo2 from "../../../components/Block/FeatureSection/FeatureSection2/Demo";
+import FeatureSectionDemo3 from "../../../components/Block/FeatureSection/FeatureSection3/Demo";
+import FeatureSectionDemo4 from "../../../components/Block/FeatureSection/FeatureSection4/Demo";
+import FeatureSectionDemo5 from "../../../components/Block/FeatureSection/FeatureSection5/Demo";
+import FeatureSectionDemo6 from "../../../components/Block/FeatureSection/FeatureSection6/Demo";
+import FeatureSectionDemo7 from "../../../components/Block/FeatureSection/FeatureSection7/Demo";
 
 const FeatureSectionPage = () => {
   return (
@@ -65,31 +66,31 @@ const FeatureSectionPage = () => {
           <div className="mb-16">
             <h2 className="text-xl font-bold text-textSlate">Creative Flow</h2>
             <p className="text-sm text-gray-500 mb-6">A fluid hero for dynamic brands and startups.</p>
-            <HeroSectionDemo3 />
+            <FeatureSectionDemo3 />
           </div>
 
           <div className="mb-16">
             <h2 className="text-xl font-bold text-textSlate">Video Background</h2>
             <p className="text-sm text-gray-500 mb-6">Timeless layout with balance and clarity.</p>
-            <HeroSectionDemo4 />
+            <FeatureSectionDemo4 />
           </div>
 
           <div className="mb-16">
             <h2 className="text-xl font-bold text-textSlate">Split Showcase</h2>
             <p className="text-sm text-gray-500 mb-6">Perfect for product highlights and dual messaging.</p>
-            <HeroSectionDemo5 />
+            <FeatureSectionDemo5 />
           </div>
 
           <div className="mb-16">
             <h2 className="text-xl font-bold text-textSlate">Glassmorphism Glow</h2>
             <p className="text-sm text-gray-500 mb-6">Futuristic hero with liquid glass effects.</p>
-            <HeroSectionDemo6 />
+            <FeatureSectionDemo6 />
           </div>
 
           <div className="mb-16">
             <h2 className="text-xl font-bold text-textSlate">Dark Mode Impact</h2>
             <p className="text-sm text-gray-500 mb-6">Elegant design that shines in the dark.</p>
-            <HeroSectionDemo7 />
+            <FeatureSectionDemo7 />
           </div>
 
           <div className="mb-16">

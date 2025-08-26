@@ -1,3 +1,5 @@
+"use client";
+
 import { 
   LayoutDashboard, 
   Plug, 
@@ -6,6 +8,7 @@ import {
   Database, 
   Users 
 } from "lucide-react";
+import { motion } from "framer-motion";
 
 const features = [
   {
@@ -46,40 +49,59 @@ const features = [
   },
 ];
 
-const FeaturesSection2=()=> {
+export default function FeaturesSection1() {
   return (
-    <section className="py-20 px-6 bg-white">
+    <section className="relative py-24 px-6 bg-gradient-to-br from-gray-900 via-gray-950 to-black text-white overflow-hidden">
+      {/* Decorative glow */}
+      <div className="absolute top-0 left-0 w-72 h-72 bg-yellow-500/20 blur-[120px] rounded-full -z-10" />
+      <div className="absolute bottom-0 right-0 w-72 h-72 bg-purple-500/20 blur-[120px] rounded-full -z-10" />
+
       <div className="max-w-7xl mx-auto">
         {/* Header */}
-        <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-16">
-          <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 leading-tight max-w-2xl">
+        <motion.div 
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7 }}
+          viewport={{ once: true }}
+          className="flex flex-col md:flex-row md:items-center md:justify-between mb-16"
+        >
+          <h2 className="text-4xl md:text-5xl font-extrabold leading-tight bg-gradient-to-r from-yellow-400 via-yellow-500 to-orange-500 bg-clip-text text-transparent">
             POWERFUL FEATURES <br />
             DESIGNED FOR EFFICIENCY
           </h2>
-          <button className="mt-6 md:mt-0 px-6 py-3 bg-yellow-400 hover:bg-yellow-500 text-black font-semibold rounded-md shadow-sm transition-colors">
+          <motion.button
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            className="mt-6 md:mt-0 px-8 py-3 bg-gradient-to-r from-yellow-400 to-orange-500 text-black font-semibold rounded-xl shadow-lg hover:shadow-yellow-500/40 transition-all"
+          >
             View all features
-          </button>
-        </div>
+          </motion.button>
+        </motion.div>
 
         {/* Features grid */}
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {features.map((feature, index) => (
-            <div
+            <motion.div
               key={index}
-              className="p-6 border border-gray-200 rounded-xl bg-white hover:shadow-md transition-shadow"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: index * 0.15, duration: 0.6 }}
+              viewport={{ once: true }}
+              className="p-6 rounded-2xl bg-white/10 backdrop-blur-xl border border-white/10 shadow-lg hover:shadow-yellow-500/20 transition-all group"
             >
-              <feature.icon className="w-8 h-8 text-gray-700 mb-4" />
-              <h3 className="font-bold text-lg text-gray-900 mb-2">
+              <div className="w-12 h-12 flex items-center justify-center rounded-xl bg-gradient-to-tr from-yellow-400 to-orange-500 mb-5 shadow-md group-hover:scale-110 transition-transform">
+                <feature.icon className="w-6 h-6 text-black" />
+              </div>
+              <h3 className="font-bold text-lg mb-3 text-white">
                 {feature.title}
               </h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
+              <p className="text-gray-300 text-sm leading-relaxed">
                 {feature.description}
               </p>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
     </section>
   );
 }
-export default FeaturesSection2
