@@ -388,7 +388,7 @@ const HeroSection26=()=> {
           </div>
         </section>
 
-        <footer className="text-center text-xs text-slate-400 mt-6">Built with ❤️ — Demo dashboard • Customize data & styling as needed</footer>
+        <footer className="text-center text-xs text-slate-400 mt-6">Built with ❤️ — Demo dashboard • SnapKit</footer>
       </main>
     </div>
   )

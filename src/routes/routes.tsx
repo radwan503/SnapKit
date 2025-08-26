@@ -19,6 +19,11 @@ const routes = [
     layout: MainLayout,
     component: lazy(() => import("../pages/Blocks/HeroSection/HeroSection")),
   },
+  {
+    path: "/block/feature-section",
+    layout: MainLayout,
+    component: lazy(() => import("../pages/Blocks/FeatureSection/FeatureSection")),
+  },
 ];
 
 export default routes;

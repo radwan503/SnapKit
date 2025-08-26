@@ -9,7 +9,7 @@ const pageSections = [
     title: 'Feature Sections', 
     count: 13, 
     image: 'https://placehold.co/400x200/f0f4f8/334155?text=Feature+Section',
-    link: '/sections/feature' 
+    link: '/block/feature-section' 
   },
   { 
     title: 'CTA Sections', 

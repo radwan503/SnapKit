@@ -1,6 +1,4 @@
 import React from "react";
-import HeroSectionDemo1 from "../../../components/Block/HeroSection/HeroSection1/Demo";
-import HeroSectionDemo2 from "../../../components/Block/HeroSection/HeroSection2/Demo";
 import HeroSectionDemo3 from "../../../components/Block/HeroSection/HeroSection3/Demo";
 import HeroSectionDemo4 from "../../../components/Block/HeroSection/HeroSection4/Demo";
 import HeroSectionDemo5 from "../../../components/Block/HeroSection/HeroSection5/Demo";
@@ -30,8 +28,10 @@ import HeroSectionDemo28 from "../../../components/Block/HeroSection/HeroSection
 import HeroSectionDemo29 from "../../../components/Block/HeroSection/HeroSection29/Demo";
 import HeroSectionDemo30 from "../../../components/Block/HeroSection/HeroSection30/Demo";
 import HeroSectionDemo31 from "../../../components/Block/HeroSection/HeroSection31/Demo";
+import FeatureSectionDemo1 from "../../../components/Block/FeatureSection/FeatureSection1/Demo";
+import FeatureSectionDemo2 from "../../../components/Block/FeatureSection/FeatureSection2/Demo";
 
-const HeroSectionPage = () => {
+const FeatureSectionPage = () => {
   return (
     <React.Fragment>
       <section className="relative bg-primary py-10 md:py-10 overflow-hidden">
@@ -42,10 +42,10 @@ const HeroSectionPage = () => {
               UI BLOCKS
             </p>
             <h1 className="text-4xl md:text-5xl font-extrabold text-textColor leading-tight mb-4">
-              Hero Sections
+              Feature Sections
             </h1>
             <p className="text-lg md:text-xl text-textSlate max-w-2xl mt-2">
-              Use these Tailwind CSS hero section examples to add important messaging, product photos, and call-to-actions to the top of your website. Each hero demo is unique with its own style and layout.
+              Use these Tailwind CSS feature section examples to highlight the most important features of your product or service. These examples are designed and built by the Tailwind CSS team, and include a variety of different styles and layouts.
             </p>
           </div>
 
@@ -53,13 +53,13 @@ const HeroSectionPage = () => {
           <div className="mb-16">
             <h2 className="text-xl font-bold text-textSlate">Minimal Elegance</h2>
             <p className="text-sm text-gray-500 mb-6">Clean, modern design with focus on typography.</p>
-            <HeroSectionDemo1 />
+            <FeatureSectionDemo1 />
           </div>
 
           <div className="mb-16">
             <h2 className="text-xl font-bold text-textSlate">Bold Statement</h2>
             <p className="text-sm text-gray-500 mb-6">Grab attention instantly with powerful visuals.</p>
-            <HeroSectionDemo2 />
+            <FeatureSectionDemo2 />
           </div>
 
           <div className="mb-16">
@@ -242,4 +242,4 @@ const HeroSectionPage = () => {
   );
 };
 
-export default HeroSectionPage;
+export default FeatureSectionPage;
