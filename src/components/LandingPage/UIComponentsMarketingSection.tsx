@@ -1,5 +1,5 @@
-import  { useState } from 'react';
-import { ArrowRight } from 'lucide-react'; // Assuming Lucide React is available for icons
+import { useState } from 'react';
+import { ArrowRight } from 'lucide-react';
 import ComponentPreviewCard from './ComponentPreviewCard';
 import Button from '../../utils/Button';
 import { tabContent } from '../../data/landingPageConfig';
@@ -16,12 +16,15 @@ const UIComponentsTabbedSection = () => {
       </div>
 
       <div className="container mx-auto px-4">
+        {/* Heading */}
         <h2 className="text-4xl md:text-5xl font-extrabold text-textColor leading-tight mb-6 text-left">
-          Beautiful UI components, built for real-world projects.
+          Ready-to-use UI components <br className="hidden sm:inline" /> for modern projects.
         </h2>
-        <p className="text-lg md:text-xl text-textSlate max-w-2xl  text-left mb-12">
-          A library of 500+ professionally designed, expertly crafted component examples you can
-          drop into your Tailwind projects and customize to your heart's content.
+
+        {/* Subtext */}
+        <p className="text-lg md:text-xl text-textSlate max-w-2xl text-left mb-12">
+          Explore a growing collection of 149+ hand-crafted, production-ready components. 
+          Save hours of design and development time while keeping full creative control with Tailwind CSS.
         </p>
 
         {/* Tab Navigation */}
@@ -34,7 +37,7 @@ const UIComponentsTabbedSection = () => {
                 py-3 px-6 text-lg font-semibold border-l border-darkBg
                 ${activeTab === key
                   ? 'text-textColor bg-darkBg border border-grayBg'
-                  : 'text-textSlate hover:text-gray-700  '}
+                  : 'text-textSlate hover:text-gray-700'}
                 transition-colors duration-200 focus:outline-none
               `}
             >
@@ -43,9 +46,9 @@ const UIComponentsTabbedSection = () => {
           ))}
         </div>
 
-        {/* Tab Content (Grid of Images) */}
+        {/* Tab Content */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-          {currentTab.items.map((item:any, index:any) => (
+          {currentTab.items.map((item: any, index: any) => (
             <ComponentPreviewCard
               key={index}
               image={item.image}
@@ -55,10 +58,10 @@ const UIComponentsTabbedSection = () => {
           ))}
         </div>
 
-        {/* "See More" Button */}
+        {/* CTA Button */}
         <div className="flex justify-center mt-12">
           <Button variant="primary" size="lg" icon={ArrowRight}>
-            See more
+            Browse full library
           </Button>
         </div>
       </div>

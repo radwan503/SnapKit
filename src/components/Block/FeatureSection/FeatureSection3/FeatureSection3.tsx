@@ -1,5 +1,3 @@
-"use client";
-
 import {
   Monitor,
   Smartphone,
@@ -57,7 +55,7 @@ const featureIconColors = [
   "from-rose-400 to-red-500",
 ];
 
-export default function AdvancedFeatures() {
+const FeatureSection3=()=> {
   return (
     <section className="relative overflow-hidden py-24 sm:py-32 bg-gradient-to-br from-blue-50 via-white to-indigo-100 ">      
       <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
@@ -118,3 +116,4 @@ export default function AdvancedFeatures() {
     </section>
   );
 }
+export default FeatureSection3;

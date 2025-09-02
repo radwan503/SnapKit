@@ -1,11 +1,11 @@
 
-import { Menu, X, Sun, Moon, Grid2x2Plus } from "lucide-react";
+import { Menu, X, Grid2x2Plus } from "lucide-react";
 import { Link } from "react-router";
 import { useTheme } from "../utils/ThemeContext";
 
 
 const Navbar = ({ toggleSidebar, toggleNav, navOpen }:any) => {
-  const { theme, toggleTheme } = useTheme();
+  const { toggleTheme } = useTheme();
 
   return (
     <header className="bg-primary text-white border-b border-darkBg dark:bg-gray-900 dark:text-white h-16 relative z-40">
@@ -20,7 +20,7 @@ const Navbar = ({ toggleSidebar, toggleNav, navOpen }:any) => {
 
         <div className="flex items-center gap-4">
           <button onClick={toggleTheme}>
-            {theme === "dark" ? <Sun size={20} /> : <Moon size={20} />}
+            {/* {theme === "dark" ? <Sun size={20} /> : <Moon size={20} />} */}
           </button>
           <button onClick={toggleNav} className="md:hidden">
             {navOpen ? <X size={24} /> : <Menu size={24} />}
@@ -29,7 +29,7 @@ const Navbar = ({ toggleSidebar, toggleNav, navOpen }:any) => {
 
         <nav className="hidden md:flex gap-4">
           <Link to="/">Home</Link>
-          <Link to="/about">About</Link>
+          <Link to="https://radwananik.netlify.app/">Creator</Link>
           <Link to="/contact">Contact</Link>
         </nav>
       </div>

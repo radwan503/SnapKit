@@ -15,14 +15,18 @@ const UIBlocks = () => {
               UI BLOCKS
             </p>
             <h1 className="text-4xl md:text-5xl font-extrabold text-textColor leading-tight mb-4">
-              Components
+              Beautifully Crafted Components
             </h1>
-            <p className="text-lg md:text-xl text-textSlate max-w-2xl">Over 500+ professionally designed, fully responsive, expertly crafted component examples you can drop into your Tailwind projects and customize to your heart’s content.</p>
+            <p className="text-lg md:text-xl text-textSlate max-w-2xl">
+              Explore a growing library of <span className="font-semibold">149+ responsive, production-ready components</span> built with React + Tailwind CSS. 
+              Copy, paste, and customize with ease — no design skills required.
+            </p>
             <p className="text-lg md:text-xl text-textSlate max-w-2xl mt-2">
-              Heroes, feature sections, newsletter sign up forms — everything you need to
-              build beautiful marketing websites.
+              From hero sections and pricing tables to newsletters, testimonials, and footers — everything you need to 
+              design modern, conversion-focused websites faster.
             </p>
           </div>
+
 
           {/* Page Sections Grid */}
           <div className="mb-16">

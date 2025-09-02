@@ -4,7 +4,6 @@ import OfferingsSection from "../components/LandingPage/OfferingsSection"
 import TestimonialsSection from "../components/LandingPage/TestimonialsSection"
 import UIComponentsMarketingSection from "../components/LandingPage/UIComponentsMarketingSection"
 import TemplatesGridSection from "../components/LandingPage/TemplatesGridSection"
-import StatsCardSection from "../components/LandingPage/StatsCardSection"
 import AngledPanelBackground from "../components/Common/AngledPanelBackground"
 
 
@@ -18,7 +17,7 @@ const Home = () => {
         <UIComponentsMarketingSection/>
         <TemplatesGridSection/>
         <TestimonialsSection />
-        <StatsCardSection/>
+        {/* <StatsCardSection/> */}
 
 
 

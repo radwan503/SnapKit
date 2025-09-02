@@ -1,29 +1,5 @@
 import React from "react";
 
-import HeroSectionDemo8 from "../../../components/Block/HeroSection/HeroSection8/Demo";
-import HeroSectionDemo9 from "../../../components/Block/HeroSection/HeroSection9/Demo";
-import HeroSectionDemo10 from "../../../components/Block/HeroSection/HeroSection10/Demo";
-import HeroSectionDemo11 from "../../../components/Block/HeroSection/HeroSection11/Demo";
-import HeroSectionDemo12 from "../../../components/Block/HeroSection/HeroSection12/Demo";
-import HeroSectionDemo13 from "../../../components/Block/HeroSection/HeroSection13/Demo";
-import HeroSectionDemo14 from "../../../components/Block/HeroSection/HeroSection14/Demo";
-import HeroSectionDemo15 from "../../../components/Block/HeroSection/HeroSection15/Demo";
-import HeroSectionDemo16 from "../../../components/Block/HeroSection/HeroSection16/Demo";
-import HeroSectionDemo17 from "../../../components/Block/HeroSection/HeroSection17/Demo";
-import HeroSectionDemo18 from "../../../components/Block/HeroSection/HeroSection18/Demo";
-import HeroSectionDemo19 from "../../../components/Block/HeroSection/HeroSection19/Demo";
-import HeroSectionDemo20 from "../../../components/Block/HeroSection/HeroSection20/Demo";
-import HeroSectionDemo21 from "../../../components/Block/HeroSection/HeroSection21/Demo";
-import HeroSectionDemo22 from "../../../components/Block/HeroSection/HeroSection22/Demo";
-import HeroSectionDemo23 from "../../../components/Block/HeroSection/HeroSection23/Demo";
-import HeroSectionDemo24 from "../../../components/Block/HeroSection/HeroSection24/Demo";
-import HeroSectionDemo25 from "../../../components/Block/HeroSection/HeroSection25/Demo";
-import HeroSectionDemo26 from "../../../components/Block/HeroSection/HeroSection26/Demo";
-import HeroSectionDemo27 from "../../../components/Block/HeroSection/HeroSection27/Demo";
-import HeroSectionDemo28 from "../../../components/Block/HeroSection/HeroSection28/Demo";
-import HeroSectionDemo29 from "../../../components/Block/HeroSection/HeroSection29/Demo";
-import HeroSectionDemo30 from "../../../components/Block/HeroSection/HeroSection30/Demo";
-import HeroSectionDemo31 from "../../../components/Block/HeroSection/HeroSection31/Demo";
 import FeatureSectionDemo1 from "../../../components/Block/FeatureSection/FeatureSection1/Demo";
 import FeatureSectionDemo2 from "../../../components/Block/FeatureSection/FeatureSection2/Demo";
 import FeatureSectionDemo3 from "../../../components/Block/FeatureSection/FeatureSection3/Demo";
@@ -31,6 +7,13 @@ import FeatureSectionDemo4 from "../../../components/Block/FeatureSection/Featur
 import FeatureSectionDemo5 from "../../../components/Block/FeatureSection/FeatureSection5/Demo";
 import FeatureSectionDemo6 from "../../../components/Block/FeatureSection/FeatureSection6/Demo";
 import FeatureSectionDemo7 from "../../../components/Block/FeatureSection/FeatureSection7/Demo";
+import FeatureSectionDemo8 from "../../../components/Block/FeatureSection/FeatureSection8/Demo";
+import FeatureSectionDemo9 from "../../../components/Block/FeatureSection/FeatureSection9/Demo";
+import FeatureSectionDemo10 from "../../../components/Block/FeatureSection/FeatureSection10/Demo";
+import FeatureSectionDemo11 from "../../../components/Block/FeatureSection/FeatureSection11/Demo";
+import FeatureSectionDemo12 from "../../../components/Block/FeatureSection/FeatureSection12/Demo";
+import FeatureSectionDemo13 from "../../../components/Block/FeatureSection/FeatureSection13/Demo";
+import FeatureSectionDemo14 from "../../../components/Block/FeatureSection/FeatureSection14/Demo";
 
 const FeatureSectionPage = () => {
   return (
@@ -96,146 +79,43 @@ const FeatureSectionPage = () => {
           <div className="mb-16">
              <h2 className="text-xl font-bold text-textSlate">Product Spotlight</h2>
             <p className="text-sm text-gray-500 mb-6">Soft, trendy gradients that breathe life.</p>
-            <HeroSectionDemo8 />
+            <FeatureSectionDemo8 />
           </div>
 
           <div className="mb-16">
             <h2 className="text-xl font-bold text-textSlate">Gradient Vibes</h2>
             <p className="text-sm text-gray-500 mb-6">Showcase your product front and center.</p>
-            <HeroSectionDemo9 />
+            <FeatureSectionDemo9 />
           </div>
 
           <div className="mb-16">
             <h2 className="text-xl font-bold text-textSlate">Call-to-Action Power</h2>
             <p className="text-sm text-gray-500 mb-6">Drive users to click with bold CTAs.</p>
-            <HeroSectionDemo10 />
+            <FeatureSectionDemo10 />
           </div>
 
           <div className="mb-16">
             <h2 className="text-xl font-bold text-textSlate">Tech Startup Edge</h2>
             <p className="text-sm text-gray-500 mb-6">Sleek design for SaaS and innovations.</p>
-            <HeroSectionDemo11 />
+            <FeatureSectionDemo11 />
           </div>
 
           <div className="mb-16">
             <h2 className="text-xl font-bold text-textSlate">E-commerce Hero</h2>
             <p className="text-sm text-gray-500 mb-6">Highlight featured products beautifully.</p>
-            <HeroSectionDemo12 />
+            <FeatureSectionDemo12 />
           </div>
 
           <div className="mb-16">
             <h2 className="text-xl font-bold text-textSlate">Luxury Style</h2>
             <p className="text-sm text-gray-500 mb-6">Premium aesthetic with subtle animations.</p>
-            <HeroSectionDemo13 />
+            <FeatureSectionDemo13 />
           </div>
 
           <div className="mb-16">
             <h2 className="text-xl font-bold text-textSlate">Classic Centered</h2>
             <p className="text-sm text-gray-500 mb-6">Bring your hero to life with fun interactions.</p>
-            <HeroSectionDemo14 />
-          </div>
-
-          <div className="mb-16">
-            <h2 className="text-xl font-bold text-textSlate">Creative Agency</h2>
-            <p className="text-sm text-gray-500 mb-6">Stylish design for portfolios and studios.</p>
-            <HeroSectionDemo15 />
-          </div>
-
-          <div className="mb-16">
-            <h2 className="text-xl font-bold text-textSlate">Full Background Visual</h2>
-            <p className="text-sm text-gray-500 mb-6">Use bold imagery to tell your story.</p>
-            <HeroSectionDemo16 />
-          </div>
-
-          <div className="mb-16">
-            <h2 className="text-xl font-bold text-textSlate">Neon Future</h2>
-            <p className="text-sm text-gray-500 mb-6">Energetic look with glowing details.</p>
-            <HeroSectionDemo17 />
-          </div>
-
-          <div className="mb-16">
-            <h2 className="text-xl font-bold text-textSlate">Corporate Professional</h2>
-            <p className="text-sm text-gray-500 mb-6">Perfect hero for business and consulting.</p>
-            <HeroSectionDemo18 />
-          </div>
-
-          <div className="mb-16">
-            <h2 className="text-xl font-bold text-textSlate">Content First</h2>
-            <p className="text-sm text-gray-500 mb-6">Emphasis on text clarity and brand tone.</p>
-            <HeroSectionDemo19 />
-          </div>
-
-          <div className="mb-16">
-            <h2 className="text-xl font-bold text-textSlate">Lifestyle Story</h2>
-            <p className="text-sm text-gray-500 mb-6">Show emotion with people-centered visuals.</p>
-            <HeroSectionDemo20 />
-          </div>
-
-          <div className="mb-16">
-            <h2 className="text-xl font-bold text-textSlate">Modern Grid</h2>
-            <p className="text-sm text-gray-500 mb-6">Structured hero with multiple content blocks.</p>
-            <HeroSectionDemo21 />
-          </div>
-
-          <div className="mb-16">
-            <h2 className="text-xl font-bold text-textSlate">Interactive Layers</h2>
-            <p className="text-sm text-gray-500 mb-6">Depth and engagement through layered design.</p>
-            <HeroSectionDemo22 />
-          </div>
-
-          <div className="mb-16">
-            
-             <h2 className="text-xl font-bold text-textSlate">Playful Motion</h2>
-            <p className="text-sm text-gray-500 mb-6">Bring motion storytelling to your hero.</p>
-            <HeroSectionDemo23 />
-          </div>
-
-          <div className="mb-16">
-            <h2 className="text-xl font-bold text-textSlate">Rounded Corners Flow</h2>
-            <p className="text-sm text-gray-500 mb-6">Smooth edges for a friendly vibe.</p>
-            <HeroSectionDemo24 />
-          </div>
-
-          <div className="mb-16">
-            <h2 className="text-xl font-bold text-textSlate">Luxury Glass Blur</h2>
-            <p className="text-sm text-gray-500 mb-6">Stylish, Apple-inspired hero section.</p>
-            <HeroSectionDemo25 />
-          </div>
-
-          <div className="mb-16">
-            <h2 className="text-xl font-bold text-textSlate">Startup Energy</h2>
-            <p className="text-sm text-gray-500 mb-6">Youthful, fast, and growth-focused design.</p>
-            <HeroSectionDemo26 />
-          </div>
-
-          <div className="mb-16">
-            <h2 className="text-xl font-bold text-textSlate">Creative Gradient Mesh</h2>
-            <p className="text-sm text-gray-500 mb-6">Abstract backgrounds for bold statements.</p>
-            <HeroSectionDemo27 />
-          </div>
-
-          <div className="mb-16">
-            <h2 className="text-xl font-bold text-textSlate">Nature Inspired</h2>
-            <p className="text-sm text-gray-500 mb-6">Organic visuals with calm, earthy tones.</p>
-            <HeroSectionDemo28 />
-          </div>
-
-          <div className="mb-16">
-            <h2 className="text-xl font-bold text-textSlate">Festival Vibes</h2>
-            <p className="text-sm text-gray-500 mb-6">Playful, colorful hero for events.</p>
-            <HeroSectionDemo29 />
-          </div>
-
-          <div className="mb-16">
-            <h2 className="text-xl font-bold text-textSlate">Award-Winning Look</h2>
-            <p className="text-sm text-gray-500 mb-6">Premium, cutting-edge design that stands out.</p>
-            <HeroSectionDemo30 />
-          </div>
-
-          <div className="mb-16">
-            <h2 className="text-xl font-bold text-textSlate">Award-Winning Look</h2>
-            <p className="text-sm text-gray-500 mb-6">Premium, cutting-edge design that stands out.</p>
-            <HeroSectionDemo31 />
+            <FeatureSectionDemo14 />
           </div>
         </div>
       </section>

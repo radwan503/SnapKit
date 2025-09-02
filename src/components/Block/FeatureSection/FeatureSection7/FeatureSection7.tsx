@@ -52,7 +52,7 @@ const productsByCategory: Record<string, any[]> = {
       desc: "Compact two-seater for small spaces.",
       price: 520,
       image:
-        "https://images.unsplash.com/photo-1549187774-b4e9b0445b06?q=80&w=900&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=80&w=958&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       bg: "bg-[#b69e63]",
     },
     {
@@ -101,7 +101,7 @@ const productsByCategory: Record<string, any[]> = {
       desc: "Adjustable height, footrest included.",
       price: 119,
       image:
-        "https://images.unsplash.com/photo-1567016543655-c170349b0059?q=80&w=900&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1540574163026-643ea20ade25?q=80&w=900&auto=format&fit=crop",
       bg: "bg-[#c1ab7a]",
     },
     {
@@ -122,7 +122,7 @@ const productsByCategory: Record<string, any[]> = {
       desc: "Teak top with chamfered edges.",
       price: 240,
       image:
-        "https://images.unsplash.com/photo-1540558870477-e8c59a9b5b81?q=80&w=1200&auto=format&fit=crop",
+        "https://plus.unsplash.com/premium_photo-1684338795288-097525d127f0?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       bg: "bg-[#8aa0a8]",
       featured: true,
     },
@@ -159,7 +159,7 @@ const productsByCategory: Record<string, any[]> = {
       desc: "Entryway storage with shelf.",
       price: 189,
       image:
-        "https://images.unsplash.com/photo-1549187774-b4e9b0445b06?q=80&w=900&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       bg: "bg-[#c96f4b]",
     },
   ],
@@ -303,7 +303,7 @@ function ProductCard({ item }: any) {
   );
 }
 
-export default function FurnitureUI() {
+const FeatureSection7=()=> {
   const [selectedCat, setSelectedCat] = useState(categories[0].name);
   const products = getProducts(selectedCat);
 
@@ -335,3 +335,4 @@ export default function FurnitureUI() {
     </div>
   );
 }
+export default FeatureSection7

@@ -53,7 +53,7 @@ const features = [
   },
 ];
 
-export default function ModernFeatures() {
+const FeatureSection6=()=> {
   return (
     <section className="relative py-28 px-6 bg-gradient-to-b from-gray-50 via-white to-gray-50">
       <div className="max-w-7xl mx-auto text-center mb-16">
@@ -117,3 +117,4 @@ export default function ModernFeatures() {
     </section>
   );
 }
+export default  FeatureSection6

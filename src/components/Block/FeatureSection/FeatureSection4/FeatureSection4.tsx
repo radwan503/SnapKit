@@ -1,5 +1,3 @@
-"use client";
-
 import { motion } from "framer-motion";
 import {
   Monitor,
@@ -55,7 +53,7 @@ const features = [
   },
 ];
 
-export default function StaggeredFeatures() {
+const FeatureSection4=()=> {
   return (
     <section className="py-24 px-6 relative bg-gradient-to-br from-gray-900 via-black to-gray-900 overflow-hidden">
       {/* Animated gradient accent background */}
@@ -116,3 +114,4 @@ export default function StaggeredFeatures() {
     </section>
   );
 }
+export default FeatureSection4

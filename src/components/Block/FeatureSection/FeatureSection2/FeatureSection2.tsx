@@ -49,7 +49,7 @@ const features = [
   },
 ];
 
-export default function FeaturesSection1() {
+const FeaturesSection2=()=> {
   return (
     <section className="relative py-24 px-6 bg-gradient-to-br from-gray-900 via-gray-950 to-black text-white overflow-hidden">
       {/* Decorative glow */}
@@ -105,3 +105,4 @@ export default function FeaturesSection1() {
     </section>
   );
 }
+export default FeaturesSection2

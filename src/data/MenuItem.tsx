@@ -8,35 +8,35 @@ const menuData: MenuItem[] = [
     path: "/",
   },
   {
-    title: "About",
+    title: "Creator",
     icon: <Info size={20} />,
-    path: "/about",
+    path: "https://radwananik.netlify.app/",
   },
   {
-    title: "Tabs",
-    icon: <Box size={20} />,
-    path: "/ui-block/tabs",
-  },
-  {
-    title: "Hero Section",
+    title: "Hero Banner",
     icon: <Box size={20} />,
     path: "/block/hero-section",
   },
-//   {
-//     title: "Dashboard",
-//     children: [
-//       { title: "Analytics", path: "/dashboard/analytics" },
-//       { title: "Reporting", path: "/dashboard/reporting" },
-//       { title: "Projects", path: "/dashboard/projects" },
-//     ],
-//   },
-//   {
-//     title: "E-Commerce",
-//     children: [
-//       { title: "Orders", path: "/ecommerce/orders" },
-//       { title: "Products", path: "/ecommerce/products" },
-//     ],
-//   },
+  {
+    title: "Feature",
+    icon: <Box size={20} />,
+    path: "/block/feature-section",
+  },
+  {
+    title: "Dashboard",
+    children: [
+      { title: "Analytics", path: "/dashboard/analytics" },
+      { title: "Reporting", path: "/dashboard/reporting" },
+      { title: "Projects", path: "/dashboard/projects" },
+    ],
+  },
+  {
+    title: "E-Commerce",
+    children: [
+      { title: "Orders", path: "/ecommerce/orders" },
+      { title: "Products", path: "/ecommerce/products" },
+    ],
+  },
 ];
 
 export default menuData;

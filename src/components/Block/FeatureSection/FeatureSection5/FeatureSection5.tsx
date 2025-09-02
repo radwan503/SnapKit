@@ -1,5 +1,3 @@
-"use client";
-
 import { motion } from "framer-motion";
 import {
   Cpu,
@@ -55,7 +53,7 @@ const features = [
   },
 ];
 
-export default function ModernFeatures() {
+const FeatureSection5=()=> {
   return (
     <section className="relative py-24 px-6 bg-gradient-to-br from-gray-950 via-black to-gray-900 overflow-hidden">
       {/* background accents */}
@@ -106,3 +104,4 @@ export default function ModernFeatures() {
     </section>
   );
 }
+export default  FeatureSection5

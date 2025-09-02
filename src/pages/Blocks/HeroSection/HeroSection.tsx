@@ -45,9 +45,14 @@ const HeroSectionPage = () => {
               Hero Sections
             </h1>
             <p className="text-lg md:text-xl text-textSlate max-w-2xl mt-2">
-              Use these Tailwind CSS hero section examples to add important messaging, product photos, and call-to-actions to the top of your website. Each hero demo is unique with its own style and layout.
+              Kickstart your landing pages with <span className="font-semibold">stunning hero sections</span> built with React + Tailwind CSS. 
+              Showcase your brand, highlight your product, and guide visitors to take action with beautifully crafted designs.
+            </p>
+            <p className="text-lg md:text-xl text-textSlate max-w-2xl mt-2">
+              Each example comes with a unique layout and style — from minimal headlines to bold call-to-actions — ready to copy, paste, and make your own.
             </p>
           </div>
+
 
           {/* Hero Section List */}
           <div className="mb-16">
