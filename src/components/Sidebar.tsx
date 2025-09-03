@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router";
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, Home, Info } from "lucide-react";
 import menuData from "../data/MenuItem";
 
 const Sidebar = ({ collapsed }: { collapsed?: boolean }) => {
@@ -20,6 +20,21 @@ const Sidebar = ({ collapsed }: { collapsed?: boolean }) => {
       `}
     >
       <ul className="space-y-2">
+        <Link
+          to="/"
+          className="flex items-center gap-2 py-2 text-sm text-textSlate hover:text-textColor"
+        >
+          <Home/>
+          <span>Home</span>
+        </Link>
+        <Link
+          to="https://radwananik.netlify.app/"
+          className="flex items-center gap-2 py-2 text-sm text-textSlate hover:text-textColor"
+        >
+          <Info/>
+          <span>Creator</span>
+        </Link>
+        <p className="  !text-blue-500">UI Blocks</p>
         {menuData.map((menu) => (
           <li key={menu.title}>
             {menu.children ? (
