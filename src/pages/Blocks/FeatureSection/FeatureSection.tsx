@@ -15,6 +15,24 @@ import FeatureSectionDemo12 from "../../../components/Block/FeatureSection/Featu
 import FeatureSectionDemo13 from "../../../components/Block/FeatureSection/FeatureSection13/Demo";
 import FeatureSectionDemo14 from "../../../components/Block/FeatureSection/FeatureSection14/Demo";
 
+const featureSections = [
+  { title: "Pure Style", desc: "Minimal and clean typography.", component: <FeatureSectionDemo1 /> },
+  { title: "Bold Look", desc: "Strong visuals that grab attention.", component: <FeatureSectionDemo2 /> },
+  { title: "Smooth Flow", desc: "Modern and fluid feature layout.", component: <FeatureSectionDemo3 /> },
+  { title: "Dynamic Motion", desc: "Engaging video background style.", component: <FeatureSectionDemo4 /> },
+  { title: "Dual Split", desc: "Two-column highlight showcase.", component: <FeatureSectionDemo5 /> },
+  { title: "Glass Effect", desc: "Futuristic frosted glass design.", component: <FeatureSectionDemo6 /> },
+  { title: "Elegant Mode", desc: "Elegant theme section.", component: <FeatureSectionDemo7 /> },
+  { title: "Sharp Spotlight", desc: "Focus sharply on product features.", component: <FeatureSectionDemo8 /> },
+  { title: "Vivid Gradient", desc: "Vibrant gradient-based layout.", component: <FeatureSectionDemo9 /> },
+  { title: "Strong Action", desc: "Bold CTA-driven section.", component: <FeatureSectionDemo10 /> },
+  { title: "Startup Edge", desc: "Sleek SaaS and tech-focused design.", component: <FeatureSectionDemo11 /> },
+  { title: "Smart Commerce", desc: "Perfect for product showcasing.", component: <FeatureSectionDemo12 /> },
+  { title: "Modern Luxury", desc: "Premium look with subtle effects.", component: <FeatureSectionDemo13 /> },
+  { title: "Classic Center", desc: "Timeless, centered layout.", component: <FeatureSectionDemo14 /> },
+];
+
+
 const FeatureSectionPage = () => {
   return (
     <React.Fragment>
@@ -33,90 +51,14 @@ const FeatureSectionPage = () => {
             </p>
           </div>
 
-          {/* Hero Section List */}
-          <div className="mb-16">
-            <h2 className="text-xl font-bold text-textSlate">Minimal Elegance</h2>
-            <p className="text-sm text-gray-500 mb-6">Clean, modern design with focus on typography.</p>
-            <FeatureSectionDemo1 />
-          </div>
-
-          <div className="mb-16">
-            <h2 className="text-xl font-bold text-textSlate">Bold Statement</h2>
-            <p className="text-sm text-gray-500 mb-6">Grab attention instantly with powerful visuals.</p>
-            <FeatureSectionDemo2 />
-          </div>
-
-          <div className="mb-16">
-            <h2 className="text-xl font-bold text-textSlate">Creative Flow</h2>
-            <p className="text-sm text-gray-500 mb-6">A fluid hero for dynamic brands and startups.</p>
-            <FeatureSectionDemo3 />
-          </div>
-
-          <div className="mb-16">
-            <h2 className="text-xl font-bold text-textSlate">Video Background</h2>
-            <p className="text-sm text-gray-500 mb-6">Timeless layout with balance and clarity.</p>
-            <FeatureSectionDemo4 />
-          </div>
-
-          <div className="mb-16">
-            <h2 className="text-xl font-bold text-textSlate">Split Showcase</h2>
-            <p className="text-sm text-gray-500 mb-6">Perfect for product highlights and dual messaging.</p>
-            <FeatureSectionDemo5 />
-          </div>
-
-          <div className="mb-16">
-            <h2 className="text-xl font-bold text-textSlate">Glassmorphism Glow</h2>
-            <p className="text-sm text-gray-500 mb-6">Futuristic hero with liquid glass effects.</p>
-            <FeatureSectionDemo6 />
-          </div>
-
-          <div className="mb-16">
-            <h2 className="text-xl font-bold text-textSlate">Dark Mode Impact</h2>
-            <p className="text-sm text-gray-500 mb-6">Elegant design that shines in the dark.</p>
-            <FeatureSectionDemo7 />
-          </div>
-
-          <div className="mb-16">
-             <h2 className="text-xl font-bold text-textSlate">Product Spotlight</h2>
-            <p className="text-sm text-gray-500 mb-6">Soft, trendy gradients that breathe life.</p>
-            <FeatureSectionDemo8 />
-          </div>
-
-          <div className="mb-16">
-            <h2 className="text-xl font-bold text-textSlate">Gradient Vibes</h2>
-            <p className="text-sm text-gray-500 mb-6">Showcase your product front and center.</p>
-            <FeatureSectionDemo9 />
-          </div>
-
-          <div className="mb-16">
-            <h2 className="text-xl font-bold text-textSlate">Call-to-Action Power</h2>
-            <p className="text-sm text-gray-500 mb-6">Drive users to click with bold CTAs.</p>
-            <FeatureSectionDemo10 />
-          </div>
-
-          <div className="mb-16">
-            <h2 className="text-xl font-bold text-textSlate">Tech Startup Edge</h2>
-            <p className="text-sm text-gray-500 mb-6">Sleek design for SaaS and innovations.</p>
-            <FeatureSectionDemo11 />
-          </div>
-
-          <div className="mb-16">
-            <h2 className="text-xl font-bold text-textSlate">E-commerce Hero</h2>
-            <p className="text-sm text-gray-500 mb-6">Highlight featured products beautifully.</p>
-            <FeatureSectionDemo12 />
-          </div>
-
-          <div className="mb-16">
-            <h2 className="text-xl font-bold text-textSlate">Luxury Style</h2>
-            <p className="text-sm text-gray-500 mb-6">Premium aesthetic with subtle animations.</p>
-            <FeatureSectionDemo13 />
-          </div>
-
-          <div className="mb-16">
-            <h2 className="text-xl font-bold text-textSlate">Classic Centered</h2>
-            <p className="text-sm text-gray-500 mb-6">Bring your hero to life with fun interactions.</p>
-            <FeatureSectionDemo14 />
-          </div>
+          {/* Step 2: Render dynamically */}
+          {featureSections.map((item, index) => (
+            <div key={index} className="mb-16">
+              <h2 className="text-xl font-bold text-textSlate">{item.title}</h2>
+              <p className="text-sm text-gray-500 mb-6">{item.desc}</p>
+              {item.component}
+            </div>
+          ))}
         </div>
       </section>
     </React.Fragment>

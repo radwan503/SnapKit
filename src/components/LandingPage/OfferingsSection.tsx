@@ -1,5 +1,8 @@
 import { Layers2, PackagePlus, SquaresExclude } from 'lucide-react';
 import { useState } from 'react';
+import LayoutSketchPlayground from '../Common/LayoutSketchPlayground';
+import UIBlockLayoutSketchAltAnimated from '../Common/UIBlockLayoutSketchAltAnimated';
+import TemplateSketchUIDark from '../Common/TemplateSketchUIDark';
 
 const OfferingsSection = () => {
   const [activeTab, setActiveTab] = useState('ui-blocks');
@@ -11,9 +14,7 @@ const OfferingsSection = () => {
       content:
         '149+ ready-to-use, responsive sections — from Heroes and Pricing to Testimonials and Footers. Built with React + TailwindCSS, copy-paste and customize in seconds.',
       icon: <PackagePlus strokeWidth={0.5} className="h-14 w-14 font-thin" />,
-      images: [
-        '/public/block1/1.jpg',
-      ],
+      components:<UIBlockLayoutSketchAltAnimated/>
     },
     {
       id: 'templates',
@@ -21,9 +22,7 @@ const OfferingsSection = () => {
       content:
         'Pre-built website templates powered by React & Next.js. Launch faster with beautiful, modern layouts that are easy to adapt for any project.',
       icon: <Layers2 strokeWidth={0.5} className="h-14 w-14" />,
-      images: [
-        '/public/block2/3.jpg',
-      ],
+      components:<TemplateSketchUIDark/> ,
     },
     {
       id: 'ui-kit',
@@ -31,9 +30,7 @@ const OfferingsSection = () => {
       content:
         'A flexible starter kit to build your own component system. Extend React + TailwindCSS with consistent design tokens and reusable patterns.',
       icon: <SquaresExclude strokeWidth={0.5} className="h-14 w-14" />,
-      images: [
-        '/public/block3/3.jpg'
-      ],
+      components:<LayoutSketchPlayground/>
     },
   ];
 
@@ -62,9 +59,9 @@ const OfferingsSection = () => {
                   <div>
                     <div className="bg-transparent p-2">{tab.icon}</div>
                   </div>
-                  <div>
+                  <div className='hidden md:block'>
                     <p className="font-semibold">{tab.name}</p>
-                    <p className="text-grayBg dark:text-gray-200 text-left text-sm">
+                    <p className="!text-slate-500 dark:text-gray-200 text-left text-sm ">
                       {tab.content}
                     </p>
                   </div>
@@ -78,30 +75,20 @@ const OfferingsSection = () => {
             {tabs.map((tab) => (
               <div key={tab.id} className={`${activeTab === tab.id ? 'block' : 'hidden'}`}>
                 <h2 className="text-2xl font-bold text-textColor dark:text-gray-100 mb-6 text-center">
-                  {tab.name} Showcase
+                  {tab.name}
                 </h2>
                 <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-1 gap-6">
-                  {tab.images.map((imageUrl, index) => (
                     <div
-                      key={index}
-                      className="bg-gray-50 dark:bg-gray-700 rounded-lg shadow-md overflow-hidden transform transition-transform duration-300"
+                      className="bg-slate-950 dark:bg-gray-700 rounded-lg shadow-md overflow-hidden transform transition-transform duration-300"
                     >
-                      <img
-                        src={imageUrl}
-                        alt={`${tab.name} Image ${index + 1}`}
-                        className="w-full object-cover rounded-t-lg"
-                        onError={(e: any) => {
-                          e.target.onerror = null;
-                          e.target.src = `https://placehold.co/400x250/CCCCCC/000000?text=Error+Loading+Image`;
-                        }}
-                      />
-                      <div className="p-4">
-                        <p className="text-gray-700 dark:text-gray-200 text-center text-sm">
+                      {tab.components}
+                      <div className="p-4 bg-primary">
+                        <p className="text-gray-500 dark:text-gray-200 text-center text-sm">
                           {tab.name} Example
                         </p>
                       </div>
                     </div>
-                  ))}
+                 
                 </div>
               </div>
             ))}

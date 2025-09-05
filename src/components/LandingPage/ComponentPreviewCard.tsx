@@ -11,10 +11,10 @@ const patterns = [
   "bg-[linear-gradient(90deg,rgba(255,255,255,.03)_1px,transparent_1px),linear-gradient(rgba(255,255,255,.03)_1px,transparent_1px)] bg-[size:24px_24px]",
 
   // Soft radial mesh
-  "bg-[radial-gradient(circle_at_20%_30%,rgba(255,0,150,.1),transparent_60%),radial-gradient(circle_at_80%_70%,rgba(0,200,255,.1),transparent_60%)]",
+  "bg-[radial-gradient(circle_at_20%_30%,rgba(255,255,255,.03),transparent_60%),radial-gradient(circle_at_80%_70%,rgba(0,200,255,.1),transparent_60%)]",
 
   // Aurora effect
-  "bg-[conic-gradient(at_top_left,rgba(255,0,150,.15),rgba(0,200,255,.15),transparent_80%)]",
+  "bg-[conic-gradient(at_top_left,rgba(255,255,255,.03),rgba(255,255,255,.03),transparent_80%)]",
 
   // Noise texture (simulated with gradients)
   "bg-[repeating-linear-gradient(45deg,rgba(255,255,255,.02)_0px,rgba(255,255,255,.02)_2px,transparent_2px,transparent_4px)]",
@@ -37,10 +37,10 @@ const Placeholder = ({ title }: { title: string }) => {
       className={`relative h-40 rounded-lg flex items-center justify-center text-center text-sm font-semibold text-gray-300 ${randomPattern} overflow-hidden`}
     >
       {/* Animated Glow */}
-      <div className="absolute -inset-[40%] bg-gradient-to-r from-indigo-500/20 via-purple-500/20 to-slate-500/20 animate-spin-slow rounded-full blur-3xl" />
+      <div className="absolute -inset-[40%] bg-gradient-to-r from-blue-500/20 via-blue-500/20 to-blue-500/20 animate-spin-slow rounded-full blur-3xl" />
 
       {/* Parallax Floating Glow */}
-      <div className="absolute w-[200%] h-[200%] bg-gradient-to-tr from-slate-500/10 via-indigo-500/10 to-transparent animate-float-slow blur-2xl" />
+      <div className="absolute w-[200%] h-[200%] bg-gradient-to-tr from-blue-500/10 via-blue-500/10 to-transparent animate-float-slow blur-2xl" />
 
       {/* Shimmer effect on hover */}
       <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000 ease-in-out" />
@@ -57,7 +57,7 @@ const Placeholder = ({ title }: { title: string }) => {
 };
 
 const ComponentPreviewCard = ({ title, count, category }: any) => (
-  <div className="bg-darkBg rounded-xl shadow-md overflow-hidden group flex flex-col border border-white/5 hover:border-indigo-500/40 hover:shadow-indigo-500/20 transition-all duration-500 hover:-translate-y-1 hover:shadow-2xl hover:scale-[1.02] animate-float">
+  <div className="bg-darkBg rounded-xl shadow-md overflow-hidden group flex flex-col border border-white/5 hover:border-blue-500/40 hover:shadow-indigo-500/20 transition-all duration-500 hover:-translate-y-1 hover:shadow-2xl hover:scale-[1.02] animate-float">
     {/* Unique placeholder */}
     <Placeholder title={title} />
 

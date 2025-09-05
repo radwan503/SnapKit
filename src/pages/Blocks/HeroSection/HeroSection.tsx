@@ -1,4 +1,4 @@
-import React from "react";
+// Import all demos
 import HeroSectionDemo1 from "../../../components/Block/HeroSection/HeroSection1/Demo";
 import HeroSectionDemo2 from "../../../components/Block/HeroSection/HeroSection2/Demo";
 import HeroSectionDemo3 from "../../../components/Block/HeroSection/HeroSection3/Demo";
@@ -31,219 +31,68 @@ import HeroSectionDemo29 from "../../../components/Block/HeroSection/HeroSection
 import HeroSectionDemo30 from "../../../components/Block/HeroSection/HeroSection30/Demo";
 import HeroSectionDemo31 from "../../../components/Block/HeroSection/HeroSection31/Demo";
 
+const heroSections = [
+  { title: "Minimal Elegance", desc: "Clean, modern design with focus on typography.", component: <HeroSectionDemo1 /> },
+  { title: "Bold Statement", desc: "Grab attention instantly with powerful visuals.", component: <HeroSectionDemo2 /> },
+  { title: "Creative Flow", desc: "A fluid hero for dynamic brands and startups.", component: <HeroSectionDemo3 /> },
+  { title: "Video Background", desc: "Timeless layout with balance and clarity.", component: <HeroSectionDemo4 /> },
+  { title: "Split Showcase", desc: "Perfect for product highlights and dual messaging.", component: <HeroSectionDemo5 /> },
+  { title: "Glassmorphism Glow", desc: "Futuristic hero with liquid glass effects.", component: <HeroSectionDemo6 /> },
+  { title: "Dark Mode Impact", desc: "Elegant design that shines in the dark.", component: <HeroSectionDemo7 /> },
+  { title: "Product Spotlight", desc: "Soft, trendy gradients that breathe life.", component: <HeroSectionDemo8 /> },
+  { title: "Gradient Vibes", desc: "Showcase your product front and center.", component: <HeroSectionDemo9 /> },
+  { title: "Call-to-Action Power", desc: "Drive users to click with bold CTAs.", component: <HeroSectionDemo10 /> },
+  { title: "Tech Startup Edge", desc: "Sleek design for SaaS and innovations.", component: <HeroSectionDemo11 /> },
+  { title: "E-commerce Hero", desc: "Highlight featured products beautifully.", component: <HeroSectionDemo12 /> },
+  { title: "Luxury Style", desc: "Premium aesthetic with subtle animations.", component: <HeroSectionDemo13 /> },
+  { title: "Classic Centered", desc: "Bring your hero to life with fun interactions.", component: <HeroSectionDemo14 /> },
+  { title: "Creative Agency", desc: "Stylish design for portfolios and studios.", component: <HeroSectionDemo15 /> },
+  { title: "Full Background Visual", desc: "Use bold imagery to tell your story.", component: <HeroSectionDemo16 /> },
+  { title: "Neon Future", desc: "Energetic look with glowing details.", component: <HeroSectionDemo17 /> },
+  { title: "Corporate Professional", desc: "Perfect hero for business and consulting.", component: <HeroSectionDemo18 /> },
+  { title: "Content First", desc: "Emphasis on text clarity and brand tone.", component: <HeroSectionDemo19 /> },
+  { title: "Lifestyle Story", desc: "Show emotion with people-centered visuals.", component: <HeroSectionDemo20 /> },
+  { title: "Modern Grid", desc: "Structured hero with multiple content blocks.", component: <HeroSectionDemo21 /> },
+  { title: "Interactive Layers", desc: "Depth and engagement through layered design.", component: <HeroSectionDemo22 /> },
+  { title: "Playful Motion", desc: "Bring motion storytelling to your hero.", component: <HeroSectionDemo23 /> },
+  { title: "Rounded Corners Flow", desc: "Smooth edges for a friendly vibe.", component: <HeroSectionDemo24 /> },
+  { title: "Luxury Glass Blur", desc: "Stylish, Apple-inspired hero section.", component: <HeroSectionDemo25 /> },
+  { title: "Startup Energy", desc: "Youthful, fast, and growth-focused design.", component: <HeroSectionDemo26 /> },
+  { title: "Creative Gradient Mesh", desc: "Abstract backgrounds for bold statements.", component: <HeroSectionDemo27 /> },
+  { title: "Nature Inspired", desc: "Organic visuals with calm, earthy tones.", component: <HeroSectionDemo28 /> },
+  { title: "Festival Vibes", desc: "Playful, colorful hero for events.", component: <HeroSectionDemo29 /> },
+  { title: "Award-Winning Look", desc: "Premium, cutting-edge design that stands out.", component: <HeroSectionDemo30 /> },
+  { title: "Award-Winning Look", desc: "Premium, cutting-edge design that stands out.", component: <HeroSectionDemo31 /> },
+];
+
 const HeroSectionPage = () => {
   return (
-    <React.Fragment>
-      <section className="relative bg-primary py-10 md:py-10 overflow-hidden">
-        <div className="container mx-auto px-4 text-center md:text-left relative z-10">
-          {/* Top Section Header */}
-          <div className="mb-12">
-            <p className="text-sm font-semibold text-textSlate mb-2 uppercase tracking-wide">
-              UI BLOCKS
-            </p>
-            <h1 className="text-4xl md:text-5xl font-extrabold text-textColor leading-tight mb-4">
-              Hero Sections
-            </h1>
-            <p className="text-lg md:text-xl text-textSlate max-w-2xl mt-2">
-              Kickstart your landing pages with <span className="font-semibold">stunning hero sections</span> built with React + Tailwind CSS. 
-              Showcase your brand, highlight your product, and guide visitors to take action with beautifully crafted designs.
-            </p>
-            <p className="text-lg md:text-xl text-textSlate max-w-2xl mt-2">
-              Each example comes with a unique layout and style — from minimal headlines to bold call-to-actions — ready to copy, paste, and make your own.
-            </p>
-          </div>
-
-
-          {/* Hero Section List */}
-          <div className="mb-16">
-            <h2 className="text-xl font-bold text-textSlate">Minimal Elegance</h2>
-            <p className="text-sm text-gray-500 mb-6">Clean, modern design with focus on typography.</p>
-            <HeroSectionDemo1 />
-          </div>
-
-          <div className="mb-16">
-            <h2 className="text-xl font-bold text-textSlate">Bold Statement</h2>
-            <p className="text-sm text-gray-500 mb-6">Grab attention instantly with powerful visuals.</p>
-            <HeroSectionDemo2 />
-          </div>
-
-          <div className="mb-16">
-            <h2 className="text-xl font-bold text-textSlate">Creative Flow</h2>
-            <p className="text-sm text-gray-500 mb-6">A fluid hero for dynamic brands and startups.</p>
-            <HeroSectionDemo3 />
-          </div>
-
-          <div className="mb-16">
-            <h2 className="text-xl font-bold text-textSlate">Video Background</h2>
-            <p className="text-sm text-gray-500 mb-6">Timeless layout with balance and clarity.</p>
-            <HeroSectionDemo4 />
-          </div>
-
-          <div className="mb-16">
-            <h2 className="text-xl font-bold text-textSlate">Split Showcase</h2>
-            <p className="text-sm text-gray-500 mb-6">Perfect for product highlights and dual messaging.</p>
-            <HeroSectionDemo5 />
-          </div>
-
-          <div className="mb-16">
-            <h2 className="text-xl font-bold text-textSlate">Glassmorphism Glow</h2>
-            <p className="text-sm text-gray-500 mb-6">Futuristic hero with liquid glass effects.</p>
-            <HeroSectionDemo6 />
-          </div>
-
-          <div className="mb-16">
-            <h2 className="text-xl font-bold text-textSlate">Dark Mode Impact</h2>
-            <p className="text-sm text-gray-500 mb-6">Elegant design that shines in the dark.</p>
-            <HeroSectionDemo7 />
-          </div>
-
-          <div className="mb-16">
-             <h2 className="text-xl font-bold text-textSlate">Product Spotlight</h2>
-            <p className="text-sm text-gray-500 mb-6">Soft, trendy gradients that breathe life.</p>
-            <HeroSectionDemo8 />
-          </div>
-
-          <div className="mb-16">
-            <h2 className="text-xl font-bold text-textSlate">Gradient Vibes</h2>
-            <p className="text-sm text-gray-500 mb-6">Showcase your product front and center.</p>
-            <HeroSectionDemo9 />
-          </div>
-
-          <div className="mb-16">
-            <h2 className="text-xl font-bold text-textSlate">Call-to-Action Power</h2>
-            <p className="text-sm text-gray-500 mb-6">Drive users to click with bold CTAs.</p>
-            <HeroSectionDemo10 />
-          </div>
-
-          <div className="mb-16">
-            <h2 className="text-xl font-bold text-textSlate">Tech Startup Edge</h2>
-            <p className="text-sm text-gray-500 mb-6">Sleek design for SaaS and innovations.</p>
-            <HeroSectionDemo11 />
-          </div>
-
-          <div className="mb-16">
-            <h2 className="text-xl font-bold text-textSlate">E-commerce Hero</h2>
-            <p className="text-sm text-gray-500 mb-6">Highlight featured products beautifully.</p>
-            <HeroSectionDemo12 />
-          </div>
-
-          <div className="mb-16">
-            <h2 className="text-xl font-bold text-textSlate">Luxury Style</h2>
-            <p className="text-sm text-gray-500 mb-6">Premium aesthetic with subtle animations.</p>
-            <HeroSectionDemo13 />
-          </div>
-
-          <div className="mb-16">
-            <h2 className="text-xl font-bold text-textSlate">Classic Centered</h2>
-            <p className="text-sm text-gray-500 mb-6">Bring your hero to life with fun interactions.</p>
-            <HeroSectionDemo14 />
-          </div>
-
-          <div className="mb-16">
-            <h2 className="text-xl font-bold text-textSlate">Creative Agency</h2>
-            <p className="text-sm text-gray-500 mb-6">Stylish design for portfolios and studios.</p>
-            <HeroSectionDemo15 />
-          </div>
-
-          <div className="mb-16">
-            <h2 className="text-xl font-bold text-textSlate">Full Background Visual</h2>
-            <p className="text-sm text-gray-500 mb-6">Use bold imagery to tell your story.</p>
-            <HeroSectionDemo16 />
-          </div>
-
-          <div className="mb-16">
-            <h2 className="text-xl font-bold text-textSlate">Neon Future</h2>
-            <p className="text-sm text-gray-500 mb-6">Energetic look with glowing details.</p>
-            <HeroSectionDemo17 />
-          </div>
-
-          <div className="mb-16">
-            <h2 className="text-xl font-bold text-textSlate">Corporate Professional</h2>
-            <p className="text-sm text-gray-500 mb-6">Perfect hero for business and consulting.</p>
-            <HeroSectionDemo18 />
-          </div>
-
-          <div className="mb-16">
-            <h2 className="text-xl font-bold text-textSlate">Content First</h2>
-            <p className="text-sm text-gray-500 mb-6">Emphasis on text clarity and brand tone.</p>
-            <HeroSectionDemo19 />
-          </div>
-
-          <div className="mb-16">
-            <h2 className="text-xl font-bold text-textSlate">Lifestyle Story</h2>
-            <p className="text-sm text-gray-500 mb-6">Show emotion with people-centered visuals.</p>
-            <HeroSectionDemo20 />
-          </div>
-
-          <div className="mb-16">
-            <h2 className="text-xl font-bold text-textSlate">Modern Grid</h2>
-            <p className="text-sm text-gray-500 mb-6">Structured hero with multiple content blocks.</p>
-            <HeroSectionDemo21 />
-          </div>
-
-          <div className="mb-16">
-            <h2 className="text-xl font-bold text-textSlate">Interactive Layers</h2>
-            <p className="text-sm text-gray-500 mb-6">Depth and engagement through layered design.</p>
-            <HeroSectionDemo22 />
-          </div>
-
-          <div className="mb-16">
-            
-             <h2 className="text-xl font-bold text-textSlate">Playful Motion</h2>
-            <p className="text-sm text-gray-500 mb-6">Bring motion storytelling to your hero.</p>
-            <HeroSectionDemo23 />
-          </div>
-
-          <div className="mb-16">
-            <h2 className="text-xl font-bold text-textSlate">Rounded Corners Flow</h2>
-            <p className="text-sm text-gray-500 mb-6">Smooth edges for a friendly vibe.</p>
-            <HeroSectionDemo24 />
-          </div>
-
-          <div className="mb-16">
-            <h2 className="text-xl font-bold text-textSlate">Luxury Glass Blur</h2>
-            <p className="text-sm text-gray-500 mb-6">Stylish, Apple-inspired hero section.</p>
-            <HeroSectionDemo25 />
-          </div>
-
-          <div className="mb-16">
-            <h2 className="text-xl font-bold text-textSlate">Startup Energy</h2>
-            <p className="text-sm text-gray-500 mb-6">Youthful, fast, and growth-focused design.</p>
-            <HeroSectionDemo26 />
-          </div>
-
-          <div className="mb-16">
-            <h2 className="text-xl font-bold text-textSlate">Creative Gradient Mesh</h2>
-            <p className="text-sm text-gray-500 mb-6">Abstract backgrounds for bold statements.</p>
-            <HeroSectionDemo27 />
-          </div>
-
-          <div className="mb-16">
-            <h2 className="text-xl font-bold text-textSlate">Nature Inspired</h2>
-            <p className="text-sm text-gray-500 mb-6">Organic visuals with calm, earthy tones.</p>
-            <HeroSectionDemo28 />
-          </div>
-
-          <div className="mb-16">
-            <h2 className="text-xl font-bold text-textSlate">Festival Vibes</h2>
-            <p className="text-sm text-gray-500 mb-6">Playful, colorful hero for events.</p>
-            <HeroSectionDemo29 />
-          </div>
-
-          <div className="mb-16">
-            <h2 className="text-xl font-bold text-textSlate">Award-Winning Look</h2>
-            <p className="text-sm text-gray-500 mb-6">Premium, cutting-edge design that stands out.</p>
-            <HeroSectionDemo30 />
-          </div>
-
-          <div className="mb-16">
-            <h2 className="text-xl font-bold text-textSlate">Award-Winning Look</h2>
-            <p className="text-sm text-gray-500 mb-6">Premium, cutting-edge design that stands out.</p>
-            <HeroSectionDemo31 />
-          </div>
+    <section className="relative bg-primary py-10 md:py-10 overflow-hidden">
+      <div className="container mx-auto px-4 text-center md:text-left relative z-10">
+        {/* Top Section Header */}
+        <div className="mb-12">
+          <p className="text-sm font-semibold text-textSlate mb-2 uppercase tracking-wide">
+            UI BLOCKS
+          </p>
+          <h1 className="text-4xl md:text-5xl font-extrabold text-textColor leading-tight mb-4">
+            Hero Sections
+          </h1>
+          <p className="text-lg md:text-xl text-textSlate max-w-2xl mt-2">
+            Kickstart your landing pages with{" "}
+            <span className="font-semibold">stunning hero sections</span> built with React + Tailwind CSS. Showcase your brand, highlight your product, and guide visitors to take action with beautifully crafted designs.
+          </p>
         </div>
-      </section>
-    </React.Fragment>
+
+        {/* Hero Section List */}
+        {heroSections.map((hero, index) => (
+          <div key={index} className="mb-16">
+            <h2 className="text-xl font-bold text-textSlate">{hero.title}</h2>
+            <p className="text-sm text-gray-500 mb-6">{hero.desc}</p>
+            {hero.component}
+          </div>
+        ))}
+      </div>
+    </section>
   );
 };
 
